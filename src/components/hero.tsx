@@ -2,22 +2,10 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { siteData } from '@/lib/site-data';
 import { ArrowRight, Heart, ChevronsDown, Plane } from 'lucide-react';
-import Image from 'next/image';
 
 export function Hero() {
   return (
     <section className="relative w-full h-screen">
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="https://placehold.co/1920x1080"
-          alt="Frankfurt cityscape"
-          fill
-          className="object-cover"
-          data-ai-hint="frankfurt cityscape"
-          priority
-        />
-        <div className="absolute inset-0 bg-black/50" />
-      </div>
       <div className="container relative z-10 flex h-full flex-col items-center justify-center text-center text-white pt-16 sm:pt-0">
         <div className="mb-4 flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-1 text-sm text-neutral-200 drop-shadow-sm backdrop-blur-sm">
           <Plane className="h-4 w-4" />
