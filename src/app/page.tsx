@@ -15,8 +15,8 @@ export default function Home() {
         <Hero />
         <UniversityHighlight />
         <Donation />
-        <MyStory />
         <FundraisingProgress />
+        <MyStory />
         <Contact />
       </main>
       <footer className="bg-muted/50">
