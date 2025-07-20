@@ -1,31 +1,79 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
+'use client';
+
+import { useRef } from 'react';
 import { siteData } from '@/lib/site-data';
+import { useOnScreen } from '@/hooks/use-on-screen';
+import { cn } from '@/lib/utils';
+import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
+
+const StorySection = ({
+  title,
+  content,
+  isLast,
+}: {
+  title: string;
+  content: string;
+  isLast: boolean;
+}) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const isVisible = useOnScreen(ref, { threshold: 0.2, triggerOnce: true });
+
+  return (
+    <div ref={ref} className="relative pl-8">
+      {!isLast && (
+        <div
+          className="absolute left-[18px] top-5 h-full w-0.5 bg-border -translate-x-1/2"
+          aria-hidden="true"
+        />
+      )}
+      <div className="flex items-center">
+        <div className="z-10 flex h-9 w-9 items-center justify-center rounded-full bg-primary ring-8 ring-background">
+          <span className="text-xl font-bold text-primary-foreground">
+            {title.charAt(0)}
+          </span>
+        </div>
+      </div>
+      <Card
+        className={cn(
+          'mt-4 transition-all duration-700 ease-out',
+          isVisible
+            ? 'opacity-100 translate-y-0'
+            : 'opacity-0 translate-y-4'
+        )}
+      >
+        <CardHeader>
+          <CardTitle className="text-2xl">{title}</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="text-base text-muted-foreground leading-relaxed">
+            {content}
+          </p>
+        </CardContent>
+      </Card>
+    </div>
+  );
+};
 
 export function MyStory() {
   return (
     <section id="my-story" className="bg-background">
       <div className="container">
         <div className="mx-auto max-w-3xl">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">{siteData.story.title}</h2>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+              {siteData.story.title}
+            </h2>
           </div>
-          <Accordion type="single" collapsible defaultValue="item-0" className="w-full">
+          <div className="space-y-12">
             {siteData.story.sections.map((item, index) => (
-              <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger className="text-xl">
-                  {item.title}
-                </AccordionTrigger>
-                <AccordionContent className="text-base text-muted-foreground leading-relaxed">
-                  {item.content}
-                </AccordionContent>
-              </AccordionItem>
+              <StorySection
+                key={index}
+                title={item.title}
+                content={item.content}
+                isLast={index === siteData.story.sections.length - 1}
+              />
             ))}
-          </Accordion>
+          </div>
         </div>
       </div>
     </section>
