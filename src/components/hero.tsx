@@ -18,7 +18,7 @@ export function Hero() {
         />
         <div className="absolute inset-0 bg-black/50" />
       </div>
-      <div className="container relative z-10 flex h-full flex-col items-end justify-center text-right text-white pb-24 pt-20 sm:pt-24">
+      <div className="container relative z-10 flex h-full flex-col items-center justify-center text-center text-white pb-24 pt-20 sm:pt-24">
         <div className="mb-4 flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-1 text-sm text-neutral-200 drop-shadow-sm backdrop-blur-sm">
           <Plane className="h-4 w-4" />
           Mestrado na Alemanha
@@ -29,7 +29,7 @@ export function Hero() {
         <p className="mt-6 max-w-3xl text-lg text-neutral-200 md:text-xl drop-shadow-sm">
           {siteData.hero.subtitle}
         </p>
-        <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+        <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
           <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white/10">
             <Link href={siteData.hero.buttonPrimary.href}>
               {siteData.hero.buttonPrimary.text}
