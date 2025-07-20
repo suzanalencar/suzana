@@ -28,6 +28,24 @@ export function FundraisingProgress() {
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">{siteData.fundraising.title}</h2>
         </div>
         <div className="mt-10 grid gap-10 lg:grid-cols-5">
+            <div className="lg:col-span-2">
+                <Card className="shadow-lg h-full flex flex-col justify-center">
+                    <CardHeader>
+                        <CardTitle>Progress</CardTitle>
+                        <CardDescription>
+                            {formatCurrency(current)} raised of {formatCurrency(goal)} goal.
+                        </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                        <Progress value={progress} className="h-4" />
+                    </CardContent>
+                    <CardFooter>
+                        <p className="text-sm text-muted-foreground w-full text-center">
+                           Thank you for every single contribution!
+                        </p>
+                    </CardFooter>
+                </Card>
+            </div>
             <div className="lg:col-span-3">
                  <Card className="shadow-lg h-full">
                     <CardHeader>
@@ -56,24 +74,6 @@ export function FundraisingProgress() {
                             </TableBody>
                         </Table>
                     </CardContent>
-                </Card>
-            </div>
-            <div className="lg:col-span-2">
-                <Card className="shadow-lg h-full flex flex-col justify-center">
-                    <CardHeader>
-                        <CardTitle>Progress</CardTitle>
-                        <CardDescription>
-                            {formatCurrency(current)} raised of {formatCurrency(goal)} goal.
-                        </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                        <Progress value={progress} className="h-4" />
-                    </CardContent>
-                    <CardFooter>
-                        <p className="text-sm text-muted-foreground w-full text-center">
-                           Thank you for every single contribution!
-                        </p>
-                    </CardFooter>
                 </Card>
             </div>
         </div>
