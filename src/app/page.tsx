@@ -7,6 +7,7 @@ import { FundraisingGoals } from '@/components/fundraising-goals';
 import { Contact } from '@/components/contact';
 import { Separator } from '@/components/ui/separator';
 import { AcceptanceLetter } from '@/components/acceptance-letter';
+import { ProfessionalExperiences } from '@/components/professional-experiences';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <UniversityHighlight />
         <Donation />
         <MyStory />
+        <ProfessionalExperiences />
         <AcceptanceLetter />
         <FundraisingGoals />
         <Contact />

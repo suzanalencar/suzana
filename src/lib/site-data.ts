@@ -49,6 +49,42 @@ export const siteData = {
       }
     ]
   },
+  professionalExperiences: {
+    title: "Professional Experiences",
+    subtitle: "A brief look into my past roles and projects.",
+    experiences: [
+      {
+        title: "Research Assistant",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        image: "https://placehold.co/400x300",
+        imageHint: "research lab"
+      },
+      {
+        title: "Tech Startup Intern",
+        description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        image: "https://placehold.co/400x300",
+        imageHint: "startup office"
+      },
+      {
+        title: "Community Project Lead",
+        description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        image: "https://placehold.co/400x300",
+        imageHint: "team collaboration"
+      },
+      {
+        title: "Academic Tutor",
+        description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        image: "https://placehold.co/400x300",
+        imageHint: "tutoring session"
+      },
+      {
+        title: "Freelance Analyst",
+        description: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.",
+        image: "https://placehold.co/400x300",
+        imageHint: "data analysis"
+      }
+    ]
+  },
   fundraising: {
     title: "Fundraising Goals",
     goal: 5000,
