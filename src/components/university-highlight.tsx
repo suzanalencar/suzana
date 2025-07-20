@@ -5,7 +5,7 @@ import { siteData } from '@/lib/site-data';
 
 export function UniversityHighlight() {
   return (
-    <section className="bg-background">
+    <section id="university-highlight" className="bg-background">
       <div className="container">
         <Card className="overflow-hidden shadow-lg">
           <CardContent className="p-0">
