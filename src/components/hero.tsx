@@ -17,7 +17,7 @@ export function Hero() {
         priority
       />
       <div className="absolute inset-0 bg-black/40" />
-      <div className="container relative z-10 flex h-full flex-col items-center justify-center text-center text-white pb-16 pt-20">
+      <div className="container relative z-10 flex h-full flex-col items-center justify-center text-center text-white pb-16 pt-20 sm:pt-12">
         <div className="mb-4 flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-1 text-sm text-neutral-200 drop-shadow-sm backdrop-blur-sm">
           <Plane className="h-4 w-4" />
           Mestrado na Alemanha
@@ -44,7 +44,7 @@ export function Hero() {
         </div>
         <Link
           href="#university-highlight"
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/80 transition-transform hover:scale-110 animate-bounce"
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/80 transition-transform hover:scale-110 animate-bounce mt-20"
           aria-label="Scroll down"
         >
           <ChevronsDown className="h-10 w-10" />
