@@ -18,7 +18,7 @@ export function Hero() {
         />
         <div className="absolute inset-0 bg-black/50" />
       </div>
-      <div className="container relative z-10 flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center text-center text-white">
+      <div className="container relative z-10 flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center text-center text-white pb-16">
         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl drop-shadow-md">
           {siteData.hero.title}
         </h1>
