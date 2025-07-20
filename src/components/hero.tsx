@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { siteData } from '@/lib/site-data';
-import { ArrowRight, Heart, ChevronDown } from 'lucide-react';
+import { ArrowRight, Heart, ChevronDown, Send } from 'lucide-react';
 import Image from 'next/image';
 
 export function Hero() {
@@ -19,6 +19,10 @@ export function Hero() {
         <div className="absolute inset-0 bg-black/50" />
       </div>
       <div className="container relative z-10 flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center text-center text-white pb-16">
+        <div className="mb-4 flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-1 text-sm text-neutral-200 drop-shadow-sm backdrop-blur-sm">
+          <Send className="h-4 w-4 -rotate-45" />
+          Mestrado na Alemanha
+        </div>
         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl drop-shadow-md">
           {siteData.hero.title}
         </h1>
