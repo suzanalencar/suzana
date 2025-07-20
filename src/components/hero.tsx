@@ -41,7 +41,7 @@ export function Hero() {
         </div>
         <Link 
           href="#university-highlight" 
-          className="absolute bottom-8 text-white transition-transform hover:scale-110 animate-bounce"
+          className="absolute bottom-4 text-white transition-transform hover:scale-110 animate-bounce"
           aria-label="Scroll down"
         >
           <ChevronDown className="h-10 w-10" />
