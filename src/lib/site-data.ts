@@ -61,8 +61,8 @@ export const siteData = {
     message: "Have questions or want to send a message of support? I'd love to hear from you!",
   },
   navLinks: [
-    { name: "My Story", href: "#my-story" },
     { name: "Support", href: "#support" },
+    { name: "My Story", href: "#my-story" },
     { name: "Contact", href: "#contact" },
   ],
 };
