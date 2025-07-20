@@ -18,7 +18,7 @@ export function Hero() {
         />
         <div className="absolute inset-0 bg-black/50" />
       </div>
-      <div className="container relative z-10 flex h-[75vh] min-h-[500px] max-h-[700px] flex-col items-center justify-center text-center text-white pb-16">
+      <div className="container relative z-10 flex h-[calc(100vh-4rem)] flex-col items-center justify-center text-center text-white pb-16">
         <div className="mb-4 flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-1 text-sm text-neutral-200 drop-shadow-sm backdrop-blur-sm">
           <Plane className="h-4 w-4" />
           Mestrado na Alemanha
