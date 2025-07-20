@@ -3,7 +3,7 @@ import { Hero } from '@/components/hero';
 import { UniversityHighlight } from '@/components/university-highlight';
 import { Donation } from '@/components/donation';
 import { MyStory } from '@/components/my-story';
-import { FundraisingProgress } from '@/components/fundraising-progress';
+import { FundraisingGoals } from '@/components/fundraising-goals';
 import { Contact } from '@/components/contact';
 import { Separator } from '@/components/ui/separator';
 
@@ -15,8 +15,8 @@ export default function Home() {
         <Hero />
         <UniversityHighlight />
         <Donation />
-        <FundraisingProgress />
         <MyStory />
+        <FundraisingGoals />
         <Contact />
       </main>
       <footer className="bg-muted/50">
