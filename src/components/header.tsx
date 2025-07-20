@@ -2,11 +2,20 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, University, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { siteData } from '@/lib/site-data';
 import { cn } from '@/lib/utils';
+
+const GermanyFlagIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 3" {...props}>
+        <rect width="5" height="3" y="0" x="0" fill="#000"/>
+        <rect width="5" height="2" y="1" x="0" fill="#D00"/>
+        <rect width="5" height="1" y="2" x="0" fill="#FFCE00"/>
+    </svg>
+);
+
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -41,7 +50,7 @@ export function Header() {
     >
       <div className="container flex h-16 items-center">
         <Link href="#" className="mr-6 flex items-center gap-2">
-          <University className="h-6 w-6 text-primary" />
+          <GermanyFlagIcon className="h-6 w-6" />
           <span className="font-bold">{siteData.appName}</span>
         </Link>
         <nav className="hidden items-center gap-6 md:flex">{navLinks}</nav>
@@ -57,7 +66,7 @@ export function Header() {
               <div className="flex h-full flex-col">
                 <div className="mb-8 flex items-center justify-between">
                    <Link href="#" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
-                    <University className="h-6 w-6 text-primary" />
+                    <GermanyFlagIcon className="h-6 w-6" />
                     <span className="font-bold">{siteData.appName}</span>
                   </Link>
                 </div>
