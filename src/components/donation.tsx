@@ -38,8 +38,8 @@ export function Donation() {
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">{siteData.donation.title}</h2>
           <p className="mt-4 text-lg text-muted-foreground">{siteData.donation.message}</p>
         </div>
-        <div className="mt-10 grid gap-10 md:grid-cols-2">
-            <Card className="shadow-lg h-full flex flex-col">
+        <div className="mt-10 mx-auto max-w-xl flex flex-col gap-8">
+            <Card className="shadow-lg">
                 <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                     <Heart className="text-primary" />
@@ -47,7 +47,7 @@ export function Donation() {
                 </CardTitle>
                 <CardDescription>Click to copy the key below.</CardDescription>
                 </CardHeader>
-                <CardContent className="flex-1 flex flex-col justify-center">
+                <CardContent>
                 <div className="flex flex-col items-center gap-4 sm:flex-row sm:gap-2 rounded-lg border bg-muted p-4">
                     <code className="flex-1 text-center sm:text-left font-mono text-sm text-muted-foreground break-all">
                     {siteData.donation.pixKey}
@@ -60,7 +60,7 @@ export function Donation() {
                 </CardContent>
             </Card>
 
-            <Card className="shadow-lg h-full flex flex-col justify-center">
+            <Card className="shadow-lg">
                 <CardHeader>
                     <CardTitle>Progress</CardTitle>
                     <CardDescription>
