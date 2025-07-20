@@ -10,27 +10,13 @@ import { AcceptanceLetter } from '@/components/acceptance-letter';
 import { ProfessionalExperiences } from '@/components/professional-experiences';
 import { siteData } from '@/lib/site-data';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function Home() {
   return (
     <div className="flex min-h-screen w-full flex-col">
       <Header />
       <main>
-        <div className="relative">
-          <div className="absolute inset-0 z-0">
-            <Image
-              src="https://placehold.co/1920x1080"
-              alt="Frankfurt cityscape"
-              fill
-              className="object-cover"
-              data-ai-hint="frankfurt cityscape"
-              priority
-            />
-            <div className="absolute inset-0 bg-black/50" />
-          </div>
-          <Hero />
-        </div>
+        <Hero />
         <UniversityHighlight />
         <Donation />
         <MyStory />
