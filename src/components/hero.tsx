@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { siteData } from '@/lib/site-data';
-import { ArrowRight, Heart, ChevronDown, Plane } from 'lucide-react';
+import { ArrowRight, Heart, ChevronsDown, Plane } from 'lucide-react';
 import Image from 'next/image';
 
 export function Hero() {
@@ -48,7 +48,7 @@ export function Hero() {
           className="absolute bottom-8 text-primary transition-transform hover:scale-110 animate-bounce"
           aria-label="Scroll down"
         >
-          <ChevronDown className="h-10 w-10" />
+          <ChevronsDown className="h-10 w-10" />
         </Link>
       </div>
     </section>
