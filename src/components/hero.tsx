@@ -24,7 +24,7 @@ export function Hero() {
           Mestrado na Alemanha
         </div>
         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl drop-shadow-md">
-          Suzana<span className="text-accent">Alencar</span>
+          Suzana<span style={{ color: '#1A2421' }}>Alencar</span>
         </h1>
         <p className="mt-6 max-w-3xl text-lg text-neutral-200 md:text-xl drop-shadow-sm">
           {siteData.hero.subtitle}
@@ -43,8 +43,8 @@ export function Hero() {
             </Link>
           </Button>
         </div>
-        <Link 
-          href="#university-highlight" 
+        <Link
+          href="#university-highlight"
           className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white transition-transform hover:scale-110 animate-bounce"
           aria-label="Scroll down"
         >
