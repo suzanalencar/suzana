@@ -24,6 +24,7 @@ const StorySection = ({
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const isVisible = useOnScreen(ref, { threshold: 0.2, triggerOnce: true });
+  const isEven = index % 2 === 0;
 
   return (
     <div ref={ref} className="relative pl-8">
@@ -48,7 +49,17 @@ const StorySection = ({
             : 'opacity-0 translate-y-4'
         )}
       >
-        <div className="grid grid-cols-1 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+            <div className={cn('p-4 md:p-6', isEven ? 'md:order-last' : '')}>
+                <Image
+                    src={image}
+                    alt={title}
+                    width={600}
+                    height={400}
+                    className="rounded-lg shadow-md aspect-[3/2] object-cover w-full"
+                    data-ai-hint={imageHint}
+                />
+            </div>
             <div>
               <CardHeader>
                 <CardTitle className="text-2xl">{title}</CardTitle>
@@ -58,16 +69,6 @@ const StorySection = ({
                   {content}
                 </p>
               </CardContent>
-            </div>
-            <div className="p-4 md:p-6 pt-0">
-                <Image
-                    src={image}
-                    alt={title}
-                    width={600}
-                    height={400}
-                    className="rounded-lg shadow-md aspect-[3/2] object-cover w-full"
-                    data-ai-hint={imageHint}
-                />
             </div>
         </div>
       </Card>
