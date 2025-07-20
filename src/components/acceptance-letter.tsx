@@ -6,10 +6,10 @@ import { Badge } from './ui/badge';
 
 export function AcceptanceLetter() {
   return (
-    <section id="acceptance-letter" className="bg-secondary/50">
+    <section id="acceptance-letter" className="bg-primary text-primary-foreground py-12 sm:py-16 md:py-20">
       <div className="container">
         <div className="mx-auto max-w-2xl text-center mb-10">
-            <Card className="text-left shadow-lg mb-8">
+            <Card className="text-left shadow-lg mb-8 text-foreground">
               <div className="grid grid-cols-1 md:grid-cols-3">
                 <div className="md:col-span-1">
                   <Image
@@ -37,7 +37,7 @@ export function AcceptanceLetter() {
               </div>
             </Card>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Letter of Acceptance</h2>
-          <p className="mt-4 text-lg text-muted-foreground">
+          <p className="mt-4 text-lg text-primary-foreground/80">
             For transparency, you can view my official acceptance letter from Goethe Universität.
           </p>
         </div>
