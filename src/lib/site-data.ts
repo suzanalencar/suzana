@@ -1,4 +1,5 @@
 import type { LucideIcon } from "lucide-react";
+import { Mail, Linkedin, Instagram } from 'lucide-react';
 
 export const siteData = {
   name: "Suzana",
@@ -106,6 +107,11 @@ export const siteData = {
     { name: "Support", href: "#support" },
     { name: "My Story", href: "#my-story" },
     { name: "Contact", href: "#contact" },
+  ],
+  socialLinks: [
+    { name: 'Email', href: 'mailto:example@email.com', icon: Mail },
+    { name: 'LinkedIn', href: '#', icon: Linkedin },
+    { name: 'Instagram', href: '#', icon: Instagram },
   ],
 };
 
