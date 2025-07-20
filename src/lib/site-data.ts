@@ -2,7 +2,7 @@ import type { LucideIcon } from "lucide-react";
 
 export const siteData = {
   name: "Suzana",
-  appName: "Goethe Gateway",
+  appName: "Mestrado Internacional - Suzana",
   hero: {
     title: "Help Me Study at Goethe Universität",
     subtitle: "I'm Suzana, and I’ve been accepted to study in Germany — with your support, I can make it happen.",

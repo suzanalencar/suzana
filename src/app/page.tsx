@@ -8,6 +8,7 @@ import { Contact } from '@/components/contact';
 import { Separator } from '@/components/ui/separator';
 import { AcceptanceLetter } from '@/components/acceptance-letter';
 import { ProfessionalExperiences } from '@/components/professional-experiences';
+import { siteData } from '@/lib/site-data';
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
       <footer className="bg-muted/50">
         <div className="container flex flex-col items-center justify-center gap-2 py-8 text-center text-sm text-muted-foreground">
             <p>Built with 💚 in hopes of a new beginning.</p>
-            <p>Goethe Gateway &copy; {new Date().getFullYear()}</p>
+            <p>{siteData.appName} &copy; {new Date().getFullYear()}</p>
         </div>
       </footer>
     </div>
