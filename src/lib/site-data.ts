@@ -17,7 +17,7 @@ export const siteData = {
   },
   university: {
     name: "Goethe Universität Frankfurt",
-    image: "https://placehold.co/1200x600",
+    image: "/app/images/0.png",
     imageHint: "university campus",
     badge: "Fall 2025 – Master's Program in STS",
   },
