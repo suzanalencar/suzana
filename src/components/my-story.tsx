@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef } from 'react';
+import Image from 'next/image';
 import { siteData } from '@/lib/site-data';
 import { useOnScreen } from '@/hooks/use-on-screen';
 import { cn } from '@/lib/utils';
@@ -9,14 +10,22 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 const StorySection = ({
   title,
   content,
+  image,
+  imageHint,
   isLast,
+  index,
 }: {
   title: string;
   content: string;
+  image: string;
+  imageHint: string;
   isLast: boolean;
+  index: number;
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const isVisible = useOnScreen(ref, { threshold: 0.2, triggerOnce: true });
+
+  const isEven = index % 2 === 0;
 
   return (
     <div ref={ref} className="relative pl-8">
@@ -41,14 +50,28 @@ const StorySection = ({
             : 'opacity-0 translate-y-4'
         )}
       >
-        <CardHeader>
-          <CardTitle className="text-2xl">{title}</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <p className="text-base text-muted-foreground leading-relaxed">
-            {content}
-          </p>
-        </CardContent>
+        <div className={cn("grid md:grid-cols-2 gap-6 items-center", isEven ? "" : "md:grid-cols-[1fr_auto]")}>
+            <div className={cn("md:order-1", isEven ? "" : "md:order-2")}>
+              <CardHeader>
+                <CardTitle className="text-2xl">{title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  {content}
+                </p>
+              </CardContent>
+            </div>
+            <div className={cn("p-4 md:p-6 md:order-2", isEven ? "" : "md:order-1")}>
+                <Image
+                    src={image}
+                    alt={title}
+                    width={600}
+                    height={400}
+                    className="rounded-lg shadow-md aspect-[3/2] object-cover"
+                    data-ai-hint={imageHint}
+                />
+            </div>
+        </div>
       </Card>
     </div>
   );
@@ -68,8 +91,11 @@ export function MyStory() {
             {siteData.story.sections.map((item, index) => (
               <StorySection
                 key={index}
+                index={index}
                 title={item.title}
                 content={item.content}
+                image={item.image}
+                imageHint={item.imageHint}
                 isLast={index === siteData.story.sections.length - 1}
               />
             ))}

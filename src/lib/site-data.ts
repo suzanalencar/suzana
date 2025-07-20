@@ -17,7 +17,7 @@ export const siteData = {
   },
   university: {
     name: "Goethe Universität Frankfurt",
-    image: "/app/images/0.png",
+    image: "https://images.unsplash.com/photo-1590132338664-36a218f62363?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     imageHint: "university campus",
     badge: "Fall 2025 – Master's Program in STS",
   },
@@ -31,15 +31,21 @@ export const siteData = {
     sections: [
       {
         title: "Who I Am",
-        content: "I'm a passionate student with a deep interest in Science and Technology Studies. My academic journey has been driven by a curiosity to understand how society and technology shape one another. Being accepted into the Master's program at Goethe Universität is the culmination of years of hard work and dedication."
+        content: "I'm a passionate student with a deep interest in Science and Technology Studies. My academic journey has been driven by a curiosity to understand how society and technology shape one another. Being accepted into the Master's program at Goethe Universität is the culmination of years of hard work and dedication.",
+        image: "https://placehold.co/600x400",
+        imageHint: "student portrait",
       },
       {
         title: "Why Germany?",
-        content: "Germany is a global leader in technological innovation and critical thought. The STS program at Goethe Universität offers a unique curriculum and renowned faculty that I believe will be instrumental in my growth as a researcher. This isn't just about a degree; it's about immersing myself in a new culture and academic environment."
+        content: "Germany is a global leader in technological innovation and critical thought. The STS program at Goethe Universität offers a unique curriculum and renowned faculty that I believe will be instrumental in my growth as a researcher. This isn't just about a degree; it's about immersing myself in a new culture and academic environment.",
+        image: "https://placehold.co/600x400",
+        imageHint: "germany landscape",
       },
       {
         title: "Your Impact",
-        content: "Your support directly helps cover essential costs that are not covered by scholarships. It helps with the flight to Germany, securing a place to live, health insurance, and daily living expenses. You're not just donating; you're investing in a dream and becoming a crucial part of my story."
+        content: "Your support directly helps cover essential costs that are not covered by scholarships. It helps with the flight to Germany, securing a place to live, health insurance, and daily living expenses. You're not just donating; you're investing in a dream and becoming a crucial part of my story.",
+        image: "https://placehold.co/600x400",
+        imageHint: "community support",
       }
     ]
   },
