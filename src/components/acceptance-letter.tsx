@@ -9,23 +9,26 @@ export function AcceptanceLetter() {
     <section id="acceptance-letter" className="bg-primary text-primary-foreground py-12 sm:py-16 md:py-20">
       <div className="container">
         <div className="mx-auto max-w-2xl text-center mb-10">
+            <h3 className="text-2xl font-semibold tracking-tight text-primary-foreground/90 mb-4 flex items-center justify-center gap-2">
+              <Globe className="h-6 w-6" />
+              Jornada Internacional
+            </h3>
             <Card className="text-left shadow-lg mb-8 text-foreground">
               <div className="grid grid-cols-1 md:grid-cols-3">
                 <div className="md:col-span-1">
                   <Image
                     src="https://placehold.co/400x400"
-                    alt="International Journey"
+                    alt="Goethe Universität Frankfurt"
                     width={400}
                     height={400}
                     className="rounded-t-lg md:rounded-l-lg md:rounded-t-none object-cover h-full w-full"
-                    data-ai-hint="journey travel"
+                    data-ai-hint="frankfurt campus"
                   />
                 </div>
                 <div className="md:col-span-2">
                   <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <Globe className="h-5 w-5 text-primary" />
-                      Jornada Internacional
+                    <CardTitle>
+                      Goethe Universität Frankfurt
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
