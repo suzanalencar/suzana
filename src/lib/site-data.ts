@@ -106,7 +106,6 @@ export const siteData = {
   navLinks: [
     { name: "Support", href: "#support" },
     { name: "My Story", href: "#my-story" },
-    { name: "Contact", href: "#contact" },
   ],
   socialLinks: [
     { name: 'Email', href: 'mailto:example@email.com', icon: Mail },
