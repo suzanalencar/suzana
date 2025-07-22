@@ -50,13 +50,13 @@ const StorySection = ({
         )}
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-            <div className={cn('p-4 md:p-6', isEven ? 'md:order-last' : '')}>
+            <div className={cn('p-6 md:p-8', isEven ? 'md:order-last' : '')}>
                 <Image
                     src={image}
                     alt={title}
                     width={600}
                     height={400}
-                    className="rounded-lg shadow-md aspect-[3/2] object-cover w-full"
+                    className="rounded-lg aspect-[3/2] object-cover w-full shadow-[8px_8px_0px_hsl(var(--primary))]"
                     data-ai-hint={imageHint}
                 />
             </div>
