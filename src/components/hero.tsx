@@ -9,7 +9,7 @@ export function Hero() {
   return (
     <section className="relative w-full h-screen">
       <Image
-        src="https://images.unsplash.com/photo-1590132338664-36a218f62363?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="/hero-image.jpeg"
         alt="Frankfurt skyline"
         fill
         className="object-cover"
@@ -23,7 +23,7 @@ export function Hero() {
           Mestrado na Alemanha
         </div>
         <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
-          Suzana<span style={{ color: '#EBF4EC' }}>Alencar</span>
+          Suzana <span style={{ color: '#EBF4EC' }}>Alencar</span>
         </h1>
         <p className="mt-6 max-w-3xl text-lg text-neutral-200 md:text-xl drop-shadow">
           {siteData.hero.subtitle}

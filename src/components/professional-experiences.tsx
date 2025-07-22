@@ -50,7 +50,7 @@ export function ProfessionalExperiences() {
                 >
                 <CarouselContent>
                     {siteData.professionalExperiences.experiences.map((exp, index) => (
-                    <CarouselItem key={index} className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
+                    <CarouselItem key={index} className="sm:basis-1/2 md:basis-1/3">
                         <div className="p-1 h-full">
                         <Card className="flex flex-col overflow-hidden shadow-lg transition-transform hover:scale-105 duration-300 h-full">
                             <div className="aspect-[4/3] relative w-full">

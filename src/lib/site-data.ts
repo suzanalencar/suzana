@@ -5,14 +5,14 @@ export const siteData = {
   name: "Suzana",
   appName: "Mestrado Internacional - Suzana",
   hero: {
-    title: "Help Me Study at Goethe Universität",
-    subtitle: "I'm Suzana, and I’ve been accepted to study in Germany — with your support, I can make it happen.",
+    title: "Help Me Study at Goethe Universität LALALALA",
+    subtitle: "I'm Suzanaaaaaa, and I’ve been accepted to study in Germany — with your support, I can make it happen.",
     buttonPrimary: {
-      text: "Read My Story",
+      text: "Leia minha história",
       href: "#my-story",
     },
     buttonSecondary: {
-      text: "Support My Exchange",
+      text: "Apoie meu mestrado",
       href: "#support",
     },
   },
