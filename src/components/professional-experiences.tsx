@@ -19,7 +19,7 @@ export function ProfessionalExperiences() {
   const isVisible = useOnScreen(containerRef, { threshold: 0.2, triggerOnce: true });
 
   const plugin = useRef(
-    Autoplay({ delay: 2500, stopOnInteraction: true, stopOnMouseEnter: true })
+    Autoplay({ delay: 4000, stopOnInteraction: true, stopOnMouseEnter: true })
   );
 
   useEffect(() => {
@@ -50,7 +50,7 @@ export function ProfessionalExperiences() {
                 >
                 <CarouselContent>
                     {siteData.professionalExperiences.experiences.map((exp, index) => (
-                    <CarouselItem key={index} className="sm:basis-1/2 md:basis-1/3">
+                    <CarouselItem key={index} className="sm:basis-1/2 lg:basis-1/3">
                         <div className="p-1 h-full">
                         <Card className="flex flex-col overflow-hidden shadow-lg transition-transform hover:scale-105 duration-300 h-full">
                             <div className="aspect-[4/3] relative w-full">
