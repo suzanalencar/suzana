@@ -5,8 +5,8 @@ export const siteData = {
   name: "Suzana",
   appName: "Mestrado Internacional - Suzana",
   hero: {
-    title: "Help Me Study at Goethe Universität LALALALA",
-    subtitle: "I'm Suzanaaaaaa, and I’ve been accepted to study in Germany — with your support, I can make it happen.",
+    title: "SuzanaAlencar",
+    subtitle: "A educação me trouxe até aqui. Com você, posso ir ainda mais longe.",
     buttonPrimary: {
       text: "Leia minha história",
       href: "#my-story",
@@ -18,14 +18,14 @@ export const siteData = {
   },
   university: {
     name: "Goethe Universität Frankfurt",
-    image: "https://images.unsplash.com/photo-1590132338664-36a218f62363?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/Goethe.jpg",
     imageHint: "university campus",
-    badge: "Fall 2025 – Master's Program in STS",
+    badge: "Mestrado em Science and Technology Studies",
   },
   donation: {
-    title: "Support My Journey with a PIX Donation",
-    pixKey: "000.000.000-00", // Example PIX key
-    message: "Every contribution, no matter the size, brings me one step closer to this dream. Thank you for being part of it.",
+    title: "Aopie meus estudos com uma doação em PIX",
+    pixKey: "alencars.suzana@gmail.com", // Example PIX key
+    message: "Toda contribuição me ajuda a estar um passo mais perto desse sonho. Obrigada por ser parte disso!",
   },
   story: {
     title: "My Story: A Journey to Germany",
@@ -87,10 +87,10 @@ export const siteData = {
     ]
   },
   fundraising: {
-    title: "Fundraising Goals",
-    goal: 5000,
-    current: 1500,
-    currency: "EUR",
+    title: "Meta",
+    goal: 81000,
+    current: 25,
+    currency: "BRL",
     budget: [
       { item: "Round-trip Airfare", cost: 1200, currency: "€" },
       { item: "First 3 Months' Rent & Deposit", cost: 2100, currency: "€" },
@@ -104,7 +104,7 @@ export const siteData = {
     message: "Have questions or want to send a message of support? I'd love to hear from you!",
   },
   navLinks: [
-    { name: "Support", href: "#support" },
+    { name: "Apoie-me", href: "#support" },
     { name: "My Story", href: "#my-story" },
   ],
   socialLinks: [
