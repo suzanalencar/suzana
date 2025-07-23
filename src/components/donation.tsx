@@ -62,7 +62,7 @@ export function Donation() {
 
             <Card className="shadow-lg">
                 <CardHeader>
-                    <CardTitle>Progress</CardTitle>
+                    <CardTitle>Progresso</CardTitle>
                     <CardDescription>
                         {formatCurrency(current)} raised of {formatCurrency(goal)} goal.
                     </CardDescription>
