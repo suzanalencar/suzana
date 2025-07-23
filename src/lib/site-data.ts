@@ -31,7 +31,7 @@ export const siteData = {
     title: "Minha história: uma trajetória para a Alemanha",
     sections: [
       {
-        title: "Who I Am",
+        title: "Quem Sou Eu",
         content: "I'm a passionate student with a deep interest in Science and Technology Studies. My academic journey has been driven by a curiosity to understand how society and technology shape one another. Being accepted into the Master's program at Goethe Universität is the culmination of years of hard work and dedication.",
         image: "https://placehold.co/600x400",
         imageHint: "student portrait",
