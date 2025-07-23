@@ -54,7 +54,7 @@ export function Donation() {
                     </code>
                     <Button onClick={handleCopy} className="w-full sm:w-auto shrink-0">
                     <Copy className="mr-2 h-4 w-4" />
-                    Copy PIX Key
+                    copie chave pix
                     </Button>
                 </div>
                 </CardContent>
