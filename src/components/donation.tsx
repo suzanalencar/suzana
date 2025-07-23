@@ -28,7 +28,7 @@ export function Donation() {
   };
 
   const formatCurrency = (amount: number) => {
-    return new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(amount);
+    return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(amount);
   }
 
   return (
@@ -64,7 +64,7 @@ export function Donation() {
                 <CardHeader>
                     <CardTitle>Progresso</CardTitle>
                     <CardDescription>
-                        {formatCurrency(current)} raised of {formatCurrency(goal)} goal.
+                        {formatCurrency(current)} arrecadados de {formatCurrency(goal)}.
                     </CardDescription>
                 </CardHeader>
                 <CardContent>

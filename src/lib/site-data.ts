@@ -92,11 +92,11 @@ export const siteData = {
     current: 25,
     currency: "BRL",
     budget: [
-      { item: "Round-trip Airfare", cost: 1200, currency: "€" },
-      { item: "First 3 Months' Rent & Deposit", cost: 2100, currency: "€" },
-      { item: "Health Insurance (1 Year)", cost: 800, currency: "€" },
-      { item: "Visa & Administrative Fees", cost: 300, currency: "€" },
-      { item: "Initial Living Expenses (Food, Transport)", cost: 600, currency: "€" },
+      { item: "Round-trip Airfare", cost: 1200, currency: "BRL" },
+      { item: "First 3 Months' Rent & Deposit", cost: 2100, currency: "BRL" },
+      { item: "Health Insurance (1 Year)", cost: 800, currency: "BRL" },
+      { item: "Visa & Administrative Fees", cost: 300, currency: "BRL" },
+      { item: "Initial Living Expenses (Food, Transport)", cost: 600, currency: "BRL" },
     ],
   },
   contact: {
