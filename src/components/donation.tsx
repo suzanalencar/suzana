@@ -43,7 +43,7 @@ export function Donation() {
                 <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                     <Heart className="text-primary" />
-                    <span>Donate with PIX</span>
+                    <span>Doe com PIX</span>
                 </CardTitle>
                 <CardDescription>Click to copy the key below.</CardDescription>
                 </CardHeader>

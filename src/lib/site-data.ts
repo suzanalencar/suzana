@@ -23,7 +23,7 @@ export const siteData = {
     badge: "Mestrado em Science and Technology Studies",
   },
   donation: {
-    title: "Aopie meus estudos com uma doação em PIX",
+    title: "Apoie meus estudos com uma doação em PIX",
     pixKey: "alencars.suzana@gmail.com", // Example PIX key
     message: "Toda contribuição me ajuda a estar um passo mais perto desse sonho. Obrigada por ser parte disso!",
   },
