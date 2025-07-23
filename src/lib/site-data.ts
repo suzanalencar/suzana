@@ -28,7 +28,7 @@ export const siteData = {
     message: "Toda contribuição me ajuda a estar um passo mais perto desse sonho. Obrigada por ser parte disso!",
   },
   story: {
-    title: "My Story: A Journey to Germany",
+    title: "Minha história: uma trajetória para a Alemanha",
     sections: [
       {
         title: "Who I Am",
@@ -92,11 +92,11 @@ export const siteData = {
     current: 25,
     currency: "BRL",
     budget: [
-      { item: "Round-trip Airfare", cost: 1200, currency: "BRL" },
-      { item: "First 3 Months' Rent & Deposit", cost: 2100, currency: "BRL" },
-      { item: "Health Insurance (1 Year)", cost: 800, currency: "BRL" },
-      { item: "Visa & Administrative Fees", cost: 300, currency: "BRL" },
-      { item: "Initial Living Expenses (Food, Transport)", cost: 600, currency: "BRL" },
+      { item: "Passagem de ida e volta", cost: 1200, currency: "BRL" },
+      { item: "Aluguel e depósito (3 meses)", cost: 2100, currency: "BRL" },
+      { item: "Seguro saúde (1 ano)", cost: 800, currency: "BRL" },
+      { item: "Visto e taxas administrativas", cost: 300, currency: "BRL" },
+      { item: "Despesas iniciais (alimentação, transporte)", cost: 600, currency: "BRL" },
     ],
   },
   contact: {
