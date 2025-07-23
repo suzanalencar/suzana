@@ -45,7 +45,7 @@ export function Donation() {
                     <Heart className="text-primary" />
                     <span>Doe com PIX</span>
                 </CardTitle>
-                <CardDescription>Click to copy the key below.</CardDescription>
+                <CardDescription>Para doações, use a chave pix abaixo:</CardDescription>
                 </CardHeader>
                 <CardContent>
                 <div className="flex flex-col items-center gap-4 sm:flex-row sm:gap-2 rounded-lg border bg-muted p-4">
