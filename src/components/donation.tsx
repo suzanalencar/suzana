@@ -72,7 +72,7 @@ export function Donation() {
                 </CardContent>
                 <CardFooter>
                     <p className="text-sm text-muted-foreground w-full text-center">
-                        Thank you for every single contribution!
+                        Obrigada por cada contribuição!
                     </p>
                 </CardFooter>
             </Card>
