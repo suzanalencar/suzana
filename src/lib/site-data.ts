@@ -33,20 +33,26 @@ export const siteData = {
       {
         title: "Quem Sou Eu",
         content: "Me chamo Suzana Alencar, tenho 23 anos e sou graduada em Engenharia Civil. Desde a infância, fui incentivada a pesquisar, ler e escrever, o que despertou em mim uma paixão por compreender como as cidades funcionam, são construídas e podem se tornar mais acessíveis e sustentáveis. Também fui profundamente influenciada pelas escolas que frequentei, onde o incentivo ao voluntariado me ensinou o valor de ajudar o outro e atuar de forma ética e comprometida com o bem coletivo.\n\nAo longo da minha formação, desenvolvi um interesse crescente pela interligação entre ciência, tecnologia e sociedade, buscando entender como esses campos moldam a vida cotidiana. Acredito no poder do conhecimento para transformar realidades e sou movida pelo desejo de contribuir com soluções que promovam justiça social, inovação e sustentabilidade. Aprender com diferentes culturas, desafios e histórias é o que me inspira a continuar estudando e atuando em contextos globais.",
-        image: "https://placehold.co/600x400",
-        imageHint: "student portrait",
+        images: [
+          { url: "https://placehold.co/600x400", hint: "student portrait" },
+          { url: "https://placehold.co/600x400", hint: "volunteer work" }
+        ],
       },
       {
         title: "Ensino Fundamental e Médio",
         content: "Desde pequena, fui incentivada a ler, escrever e pesquisar. Quando tinha por volta de 8 anos, participei de um concurso de escrita literária na escola e recebi minha primeira medalha, um reconhecimento que marcou profundamente meu interesse pelo conhecimento. Ainda na infância, aprendi sobre empatia e responsabilidade social, valores que me acompanham até hoje. Por morar e estudar em uma comunidade com grande diversidade cultural, desenvolvi um olhar sensível às diferentes realidades e um senso de pertencimento que me motiva a agir em prol do coletivo. Aos 12 anos, tive a oportunidade de visitar a nascente do rio Tietê e escrever um texto para um livro elaborado pela turma: uma vivência que despertou ainda mais meu gosto pela pesquisa de campo, pela observação e pela escrita com propósito.\n\nDesde então, venho me engajando em diversas ações voluntárias, como distribuição de produtos de higiene, roupas e alimentos em contextos de vulnerabilidade. Durante a pandemia, organizei e participei de campanhas de arrecadação, dedicando fins de semana a garantir que pessoas em situação de rua tivessem acesso ao básico. Essas experiências reforçaram minha convicção de que o conhecimento deve caminhar lado a lado com a ação social.\n\nNo ensino médio, mergulhei em atividades acadêmicas que ampliaram minha visão de mundo. Fui participante ativa de Simulações da ONU, onde pude desenvolver minha oratória, argumentação e capacidade de negociação. Em 2018, fui contemplada com a LALA Scholarship (Latin American Leadership Academy) para participar de um bootcamp de liderança juvenil na Colômbia, voltado à formação de jovens comprometidos com o impacto social na América Latina. Infelizmente, o evento coincidiu com meu calendário escolar, e não pude comparecer, mas o reconhecimento por meio da bolsa segue como um marco importante da minha trajetória e dos meus valores.",
-        image: "https://placehold.co/600x400",
-        imageHint: "germany landscape",
+        images: [
+            { url: "https://placehold.co/600x400", hint: "germany landscape" },
+            { url: "https://placehold.co/600x400", hint: "classroom" }
+        ],
       },
       {
         title: "Graduação",
         content: "Your support directly helps cover essential costs that are not covered by scholarships. It helps with the flight to Germany, securing a place to live, health insurance, and daily living expenses. You're not just donating; you're investing in a dream and becoming a crucial part of my story.",
-        image: "https://placehold.co/600x400",
-        imageHint: "community support",
+        images: [
+            { url: "https://placehold.co/600x400", hint: "community support" },
+            { url: "https://placehold.co/600x400", hint: "graduation ceremony" }
+        ],
       }
     ]
   },

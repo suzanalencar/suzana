@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useRef } from 'react';
@@ -10,21 +11,18 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 const StorySection = ({
   title,
   content,
-  image,
-  imageHint,
+  images,
   isLast,
   index,
 }: {
   title: string;
   content: string;
-  image: string;
-  imageHint: string;
+  images: { url: string; hint: string }[];
   isLast: boolean;
   index: number;
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const isVisible = useOnScreen(ref, { threshold: 0.2, triggerOnce: true });
-  const isEven = index % 2 === 0;
 
   return (
     <div ref={ref} className="relative pl-8">
@@ -50,15 +48,20 @@ const StorySection = ({
         )}
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className={cn('p-6 md:p-8', isEven ? 'md:order-last' : '')}>
-                <Image
-                    src={image}
-                    alt={title}
-                    width={600}
-                    height={400}
-                    className="rounded-lg aspect-[3/2] object-cover w-full h-full shadow-[8px_8px_0px_hsl(var(--primary))]"
-                    data-ai-hint={imageHint}
-                />
+            <div className="p-6 md:p-8">
+                <div className="flex flex-col gap-4">
+                {images.map((image, i) => (
+                    <Image
+                        key={i}
+                        src={image.url}
+                        alt={`${title} - image ${i + 1}`}
+                        width={600}
+                        height={400}
+                        className="rounded-lg aspect-[3/2] object-cover w-full h-auto shadow-[8px_8px_0px_hsl(var(--primary))]"
+                        data-ai-hint={image.hint}
+                    />
+                ))}
+                </div>
             </div>
             <div className="flex flex-col justify-center">
               <CardHeader>
@@ -95,8 +98,7 @@ export function MyStory() {
                 index={index}
                 title={item.title}
                 content={item.content}
-                image={item.image}
-                imageHint={item.imageHint}
+                images={item.images}
                 isLast={index === siteData.story.sections.length - 1}
               />
             ))}
