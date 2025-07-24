@@ -4,7 +4,6 @@ import { UniversityHighlight } from '@/components/university-highlight';
 import { Donation } from '@/components/donation';
 import { MyStory } from '@/components/my-story';
 import { FundraisingGoals } from '@/components/fundraising-goals';
-import { Contact } from '@/components/contact';
 import { Separator } from '@/components/ui/separator';
 import { AcceptanceLetter } from '@/components/acceptance-letter';
 import { ProfessionalExperiences } from '@/components/professional-experiences';
@@ -23,7 +22,6 @@ export default function Home() {
         <ProfessionalExperiences />
         <AcceptanceLetter />
         <FundraisingGoals />
-        <Contact />
       </main>
       <footer className="bg-muted/50 border-t">
         <div className="container py-12">

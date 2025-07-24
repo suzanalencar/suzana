@@ -100,10 +100,6 @@ export const siteData = {
       { item: "Emergência + despesas iniciais", cost: 10327.52, costEUR: 1535.52},
     ],
   },
-  contact: {
-    title: "Get in Touch",
-    message: "Have questions or want to send a message of support? I'd love to hear from you!",
-  },
   navLinks: [
     { name: "Apoie-me", href: "#support" },
     { name: "My Story", href: "#my-story" },
