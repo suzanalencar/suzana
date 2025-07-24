@@ -31,7 +31,7 @@ export function FundraisingGoals() {
         </div>
         <div className="mt-10 mx-auto max-w-lg">
              <Image
-                src="/comprovacaorendaalemanha.jpg"
+                src="/Comprovaçãorendaalemanha.JPG"
                 alt="Comprovação de Renda para Visto de Estudante na Alemanha"
                 width={800}
                 height={200}

@@ -35,7 +35,7 @@ export const siteData = {
         title: "Quem Sou Eu",
         content: "Me chamo Suzana Alencar, tenho 23 anos e sou graduada em Engenharia Civil. Desde a infância, fui incentivada a pesquisar, ler e escrever, o que despertou em mim uma paixão por compreender como as cidades funcionam, são construídas e podem se tornar mais acessíveis e sustentáveis. Também fui profundamente influenciada pelas escolas que frequentei, onde o incentivo ao voluntariado me ensinou o valor de ajudar o outro e atuar de forma ética e comprometida com o bem coletivo.\n\nAo longo da minha formação, desenvolvi um interesse crescente pela interligação entre ciência, tecnologia e sociedade, buscando entender como esses campos moldam a vida cotidiana. Acredito no poder do conhecimento para transformar realidades e sou movida pelo desejo de contribuir com soluções que promovam justiça social, inovação e sustentabilidade. Aprender com diferentes culturas, desafios e histórias é o que me inspira a continuar estudando e atuando em contextos globais.",
         images: [
-          { url: "https://placehold.co/600x800", hint: "student portrait" },
+          { url: "/Eu-perfil.jpg", hint: "student portrait" },
         ],
       },
       {
@@ -50,18 +50,17 @@ export const siteData = {
         title: "Graduação",
         content: "Comecei a faculdade cheia de planos, mas um mês e meio depois veio a pandemia. Mesmo assim, fiz o possível para me manter ativa. Logo no segundo semestre, entrei para a EJEM, a Empresa Júnior de Engenharia do Mackenzie. Primeiro atuei como projetista, depois como gerente de RH. Aprendi a lidar com prazos, pessoas e projetos de verdade, e essa vivência me ajudou a entender o que realmente me motivava dentro da engenharia.\n\nNo ensino remoto, fui monitora de Física II e de Materiais de Construção. Foi uma forma de me manter próxima da universidade e também de me desafiar a explicar conteúdos técnicos para outras pessoas. Assim que as coisas voltaram ao presencial, comecei meu primeiro estágio. Pude acompanhar obras, aprender na prática e entender melhor o impacto real das decisões técnicas no dia a dia da cidade.\n\nCom o tempo, fui me interessando cada vez mais por pesquisa. Consegui uma bolsa do MackPesquisa para estudar sustentabilidade na área de materiais de construção. E quando chegou a hora do TCC, já sabia que queria falar sobre mobilidade urbana. Escrevi sobre os caminhos possíveis para tornar as cidades mais acessíveis, conectadas e sustentáveis. Foi nesse processo que entendi como engenharia e tecnologia podem (e devem) caminhar junto com o cuidado pelas pessoas e pelo lugar onde vivem.",
         images: [
-            { url: "https://placehold.co/600x800", hint: "graduation ceremony" }
+            { url: "/formatura.jpg", hint: "graduation ceremony" }
         ],
       }
     ]
   },
   professionalExperiences: {
     title: "Experiências Profissionais",
-    subtitle: "",
     experiences: [
       {
         title: "EJEM",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        description: "Comecei na EJEM trabalhando com projetos de engenharia civil e, mais adiante, atuei como gerente de RH. Foi onde aprendi a lidar com prazos, pessoas e responsabilidades reais, ainda dentro da universidade.",
         image: "https://placehold.co/400x300",
         imageHint: "research lab"
       },
