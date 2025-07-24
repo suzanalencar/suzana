@@ -58,6 +58,7 @@ export function FundraisingGoals() {
                         {budget.map((item, index) => (
                             <TableRow key={index}>
                                 <TableCell className="font-medium">{item.item}</TableCell>
+
                                 <TableCell className="text-right">{formatCurrency(item.costEUR, 'EUR')}</TableCell>
                                 <TableCell className="text-right">{formatCurrency(item.cost, 'BRL')}</TableCell>
                             </TableRow>
