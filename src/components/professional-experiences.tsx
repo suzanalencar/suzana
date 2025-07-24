@@ -41,8 +41,12 @@ export function ProfessionalExperiences() {
     <section id="professional-experiences" className="bg-secondary/50" ref={containerRef}>
       <div className="container">
         <div className="mx-auto max-w-4xl text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl flex items-center justify-center gap-2">
-            <Briefcase className="h-8 w-8" />
+          <div className="flex justify-center mb-4">
+            <div className="bg-primary/20 p-3 rounded-full">
+              <Briefcase className="h-8 w-8 text-primary" />
+            </div>
+          </div>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
             {siteData.professionalExperiences.title}
           </h2>
         </div>
