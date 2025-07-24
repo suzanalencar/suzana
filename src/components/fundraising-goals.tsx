@@ -3,6 +3,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { siteData } from '@/lib/site-data';
+import Image from 'next/image';
 
 export function FundraisingGoals() {
   const { goal, goalEUR, budget } = siteData.fundraising;
@@ -17,6 +18,19 @@ export function FundraisingGoals() {
       <div className="container">
         <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">{siteData.fundraising.title}</h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <div className="mt-10 mx-auto max-w-lg">
+             <Image
+                src="https://placehold.co/600x400"
+                alt="Fundraising visual"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-lg"
+                data-ai-hint="money chart"
+              />
         </div>
         <div className="mt-10 max-w-3xl mx-auto">
             <Card className="shadow-lg h-full">

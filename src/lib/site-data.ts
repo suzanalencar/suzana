@@ -87,17 +87,17 @@ export const siteData = {
     ]
   },
   fundraising: {
-    title: "Meta",
-    goal: 81000,
-    goalEUR: 15000,
+    title: "Custos",
+    goal: 98322.41,
+    goalEUR: 14615,
     current: 25,
     currency: "BRL",
     budget: [
       { item: "Seguro saúde", cost: 11644.50, costEUR: 1731 },
       { item: "Acomodação e depósito caução", cost: 45915.19, costEUR: 6825},
       { item: "Alimentação", cost: 20182.50, costEUR: 3000  },
-      { item: "Matrícula (4 semestres)", cost: 10252.71, costEUR: 1524 },
-      { item: "Emergência + despesas iniciais", cost: 10327.52, costEUR: 1535,52 },
+      { item: "Matrícula (4 semestres)", cost: 10252.71, costEUR: 1524},
+      { item: "Emergência + despesas iniciais", cost: 10327.52, costEUR: 1535.52},
     ],
   },
   contact: {
