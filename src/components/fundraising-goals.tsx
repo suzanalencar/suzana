@@ -5,10 +5,11 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { siteData } from '@/lib/site-data';
 
 export function FundraisingGoals() {
-  const { goal, budget } = siteData.fundraising;
+  const { goal, goalEUR, budget } = siteData.fundraising;
   
-  const formatCurrency = (amount: number) => {
-    return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(amount);
+  const formatCurrency = (amount: number, currency: 'BRL' | 'EUR') => {
+    const locale = currency === 'BRL' ? 'pt-BR' : 'de-DE';
+    return new Intl.NumberFormat(locale, { style: 'currency', currency }).format(amount);
   }
 
   return (
@@ -28,19 +29,22 @@ export function FundraisingGoals() {
                     <TableHeader>
                         <TableRow>
                             <TableHead>Item</TableHead>
-                            <TableHead className="text-right">Cost</TableHead>
+                            <TableHead className="text-right">Reais</TableHead>
+                            <TableHead className="text-right">Euros</TableHead>
                         </TableRow>
                     </TableHeader>
                     <TableBody>
                         {budget.map((item, index) => (
                             <TableRow key={index}>
                                 <TableCell className="font-medium">{item.item}</TableCell>
-                                <TableCell className="text-right">{formatCurrency(item.cost)}</TableCell>
+                                <TableCell className="text-right">{formatCurrency(item.cost, 'BRL')}</TableCell>
+                                <TableCell className="text-right">{formatCurrency(item.costEUR, 'EUR')}</TableCell>
                             </TableRow>
                         ))}
                         <TableRow className="bg-muted/50 font-bold">
                             <TableCell>Total Goal</TableCell>
-                            <TableCell className="text-right">{formatCurrency(goal)}</TableCell>
+                            <TableCell className="text-right">{formatCurrency(goal, 'BRL')}</TableCell>
+                            <TableCell className="text-right">{formatCurrency(goalEUR, 'EUR')}</TableCell>
                         </TableRow>
                     </TableBody>
                 </Table>

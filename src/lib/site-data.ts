@@ -25,7 +25,7 @@ export const siteData = {
   donation: {
     title: "Apoie meus estudos com uma doação em PIX",
     pixKey: "alencars.suzana@gmail.com", // Example PIX key
-    message: "Toda contribuição me ajuda a estar um passo mais perto desse sonho. Obrigada por ser parte disso!",
+    message: "Toda contribuição me ajuda a estar um passo mais perto desse sonho. Obrigada por fazer parte!",
   },
   story: {
     title: "Minha história: uma trajetória para a Alemanha",
@@ -89,14 +89,15 @@ export const siteData = {
   fundraising: {
     title: "Meta",
     goal: 81000,
+    goalEUR: 15000,
     current: 25,
     currency: "BRL",
     budget: [
-      { item: "Passagem de ida e volta", cost: 1200, currency: "BRL" },
-      { item: "Aluguel e depósito (3 meses)", cost: 2100, currency: "BRL" },
-      { item: "Seguro saúde (1 ano)", cost: 800, currency: "BRL" },
-      { item: "Visto e taxas administrativas", cost: 300, currency: "BRL" },
-      { item: "Despesas iniciais (alimentação, transporte)", cost: 600, currency: "BRL" },
+      { item: "Seguro saúde", cost: 1200, costEUR: 220 },
+      { item: "Aluguel e depósito (3 meses)", cost: 2100, costEUR: 380 },
+      { item: "Seguro saúde (1 ano)", cost: 800, costEUR: 145 },
+      { item: "Visto e taxas administrativas", cost: 300, costEUR: 55 },
+      { item: "Despesas iniciais (alimentação, transporte)", cost: 600, costEUR: 110 },
     ],
   },
   contact: {
@@ -108,9 +109,9 @@ export const siteData = {
     { name: "My Story", href: "#my-story" },
   ],
   socialLinks: [
-    { name: 'Email', href: 'mailto:example@email.com', icon: Mail },
-    { name: 'LinkedIn', href: '#', icon: Linkedin },
-    { name: 'Instagram', href: '#', icon: Instagram },
+    { name: 'Email', href: 'alencars.suzana@gmail.com', icon: Mail },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/suzana-alencar-a57281282/', icon: Linkedin },
+    { name: 'Instagram', href: 'https://www.instagram.com/suzanalencar/', icon: Instagram },
   ],
 };
 
