@@ -78,7 +78,7 @@ export const siteData = {
       },
       {
         title: "Alphaville",
-        description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        description: "Atualmente, atuo na equipe de gestão técnica de projetos da loteadora. Participo do desenvolvimento de empreendimentos em diferentes regiões do Brasil, com foco em viabilidade, planejamento e urbanismo sustentável.",
         image: "https://placehold.co/400x300",
         imageHint: "tutoring session"
       },
