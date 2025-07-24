@@ -103,7 +103,7 @@ const StorySection = ({
                 </div>
               </CardContent>
             </div>
-            <div className={cn("p-6 md:p-8 flex flex-col justify-center items-center", imageSide === 'right' ? 'md:order-last' : '')}>
+            <div className={cn("p-6 md:p-8 flex flex-col justify-center items-center flex-1", imageSide === 'right' ? 'md:order-last' : '')}>
                 {images.length > 1 ? (
                   <Carousel
                     setApi={setApi}
