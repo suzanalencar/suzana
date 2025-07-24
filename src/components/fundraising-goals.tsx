@@ -29,12 +29,12 @@ export function FundraisingGoals() {
         </div>
         <div className="mt-10 mx-auto max-w-lg">
              <Image
-                src="https://placehold.co/600x400"
+                src="/custos.png"
                 alt="Fundraising visual"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg"
-                data-ai-hint="money chart"
+                width={800}
+                height={200}
+                className="rounded-lg shadow-lg w-full h-auto"
+                data-ai-hint="financial requirement"
               />
         </div>
         <div className="mt-10 max-w-3xl mx-auto">
