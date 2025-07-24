@@ -8,7 +8,7 @@ export function AcceptanceLetter() {
   return (
     <section id="acceptance-letter" className="bg-primary text-primary-foreground py-12 sm:py-16 md:py-20">
       <div className="container">
-        <div className="mx-auto max-w-2xl text-center mb-10">
+        <div className="mx-auto max-w-4xl text-center mb-10">
             <h3 className="text-2xl font-semibold tracking-tight text-primary-foreground/90 mb-4 flex items-center justify-center gap-2">
               <Globe className="h-6 w-6" />
               Jornada Internacional
