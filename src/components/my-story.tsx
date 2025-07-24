@@ -7,7 +7,7 @@ import { siteData } from '@/lib/site-data';
 import { useOnScreen } from '@/hooks/use-on-screen';
 import { cn } from '@/lib/utils';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
-import { User } from 'lucide-react';
+import { User, Book } from 'lucide-react';
 
 const StorySection = ({
   title,
@@ -60,6 +60,11 @@ const StorySection = ({
                   {title === "Quem Sou Eu" && (
                     <div className="bg-primary/20 p-3 rounded-full">
                       <User className="h-8 w-8 text-primary" />
+                    </div>
+                  )}
+                  {title === "Ensino Fundamental e Médio" && (
+                    <div className="bg-primary/20 p-3 rounded-full">
+                      <Book className="h-8 w-8 text-primary" />
                     </div>
                   )}
                   <span>{title}</span>
