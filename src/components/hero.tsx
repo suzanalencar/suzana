@@ -13,7 +13,7 @@ export function Hero() {
         alt="Frankfurt skyline"
         fill
         className="object-cover"
-        data-ai-hint="frankfurt skyline"
+        data-ai-hint="woman holding letter city skyline"
         priority
       />
       <div className="absolute inset-0 bg-black/40" />

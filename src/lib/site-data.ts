@@ -37,13 +37,13 @@ export const siteData = {
         imageHint: "student portrait",
       },
       {
-        title: "Why Germany?",
+        title: "Ensino Fundamental e Médio?",
         content: "Germany is a global leader in technological innovation and critical thought. The STS program at Goethe Universität offers a unique curriculum and renowned faculty that I believe will be instrumental in my growth as a researcher. This isn't just about a degree; it's about immersing myself in a new culture and academic environment.",
         image: "https://placehold.co/600x400",
         imageHint: "germany landscape",
       },
       {
-        title: "Your Impact",
+        title: "Graduação",
         content: "Your support directly helps cover essential costs that are not covered by scholarships. It helps with the flight to Germany, securing a place to live, health insurance, and daily living expenses. You're not just donating; you're investing in a dream and becoming a crucial part of my story.",
         image: "https://placehold.co/600x400",
         imageHint: "community support",
@@ -51,39 +51,33 @@ export const siteData = {
     ]
   },
   professionalExperiences: {
-    title: "Professional Experiences",
+    title: "Experiências Profissionais",
     subtitle: "A brief look into my past roles and projects.",
     experiences: [
       {
-        title: "Research Assistant",
+        title: "EJEM",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         image: "https://placehold.co/400x300",
         imageHint: "research lab"
       },
       {
-        title: "Tech Startup Intern",
+        title: "CCR",
         description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         image: "https://placehold.co/400x300",
         imageHint: "startup office"
       },
       {
-        title: "Community Project Lead",
+        title: "RFM",
         description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         image: "https://placehold.co/400x300",
         imageHint: "team collaboration"
       },
       {
-        title: "Academic Tutor",
+        title: "Alphaville",
         description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         image: "https://placehold.co/400x300",
         imageHint: "tutoring session"
       },
-      {
-        title: "Freelance Analyst",
-        description: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.",
-        image: "https://placehold.co/400x300",
-        imageHint: "data analysis"
-      }
     ]
   },
   fundraising: {
