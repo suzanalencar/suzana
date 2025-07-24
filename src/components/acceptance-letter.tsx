@@ -15,13 +15,13 @@ export function AcceptanceLetter() {
             </h3>
             <Card className="text-left shadow-lg mb-8 text-foreground">
               <div className="grid grid-cols-1 md:grid-cols-3">
-                <div className="md:col-span-1 flex items-center justify-center p-6">
+                <div className="md:col-span-1 flex items-center justify-center p-6 bg-primary/20">
                   <Image
-                    src="https://placehold.co/300x300"
+                    src="/Goethe.jpg"
                     alt="Goethe Universität Frankfurt"
                     width={300}
                     height={300}
-                    className="rounded-lg object-cover"
+                    className="rounded-lg object-cover shadow-lg"
                     data-ai-hint="frankfurt campus"
                   />
                 </div>
