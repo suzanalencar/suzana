@@ -7,6 +7,7 @@ import { siteData } from '@/lib/site-data';
 import { useOnScreen } from '@/hooks/use-on-screen';
 import { cn } from '@/lib/utils';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
+import { User } from 'lucide-react';
 
 const StorySection = ({
   title,
@@ -24,7 +25,7 @@ const StorySection = ({
   const ref = useRef<HTMLDivElement>(null);
   const isVisible = useOnScreen(ref, { threshold: 0.2, triggerOnce: true });
 
-  const imageSide = index % 2 === 0 ? 'right' : 'left';
+  const imageSide = index % 2 === 0 ? 'left' : 'right';
 
   return (
     <div ref={ref} className="relative pl-8">
@@ -52,10 +53,17 @@ const StorySection = ({
         <div className="grid grid-cols-1 md:grid-cols-2">
             <div className={cn(
                 "flex flex-col justify-center p-6 md:p-8",
-                imageSide === 'right' ? 'md:order-last' : ''
+                imageSide === 'left' ? 'md:order-last' : ''
             )}>
               <CardHeader>
-                <CardTitle className="text-2xl text-primary">{title}</CardTitle>
+                <CardTitle className="text-2xl text-primary flex items-center gap-4">
+                  {title === "Quem Sou Eu" && (
+                    <div className="bg-primary/20 p-3 rounded-full">
+                      <User className="h-8 w-8 text-primary" />
+                    </div>
+                  )}
+                  <span>{title}</span>
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="text-base text-muted-foreground leading-relaxed text-justify space-y-4">
@@ -65,10 +73,10 @@ const StorySection = ({
                 </div>
               </CardContent>
             </div>
-            <div className="p-6 md:p-8 flex flex-col justify-center">
+            <div className={cn("p-6 md:p-8 flex flex-col justify-center", imageSide === 'right' ? 'md:order-last' : '')}>
                 <div className="flex flex-col gap-4 h-full">
                 {images.map((image, i) => (
-                    <div key={i} className="relative flex-1">
+                    <div key={i} className="relative flex-1 aspect-[4/3]">
                         <Image
                             src={image.url}
                             alt={`${title} - image ${i + 1}`}
@@ -90,7 +98,7 @@ export function MyStory() {
   return (
     <section id="my-story" className="bg-background">
       <div className="container">
-        <div className="mx-auto max-w-5xl">
+        <div className="mx-auto max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
               {siteData.story.title}
