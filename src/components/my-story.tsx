@@ -64,14 +64,14 @@ const StorySection = ({
       </div>
       <Card
         className={cn(
-          'mt-4 transition-all duration-700 ease-out flex',
+          'mt-4 transition-all duration-700 ease-out',
           isVisible
             ? 'opacity-100 translate-y-0'
             : 'opacity-0 translate-y-4'
         )}
       >
         <div className="grid grid-cols-1 md:grid-cols-2 w-full">
-            <div className={cn(
+            <div className={cn( 
                 "flex flex-col justify-center",
                 imageSide === 'left' ? 'md:order-last' : ''
             )}>
@@ -103,18 +103,18 @@ const StorySection = ({
                 </div>
               </CardContent>
             </div>
-            <div className={cn("p-6 md:p-8 flex flex-col justify-center items-center h-full", imageSide === 'right' ? 'md:order-last' : '')}>
+            <div className={cn("p-6 md:p-8 flex flex-col justify-center items-center", imageSide === 'right' ? 'md:order-last' : '')}>
                 {images.length > 1 ? (
                   <Carousel
                     setApi={setApi}
                     plugins={[plugin.current]}
                     opts={{ align: 'start', loop: true }}
-                    className="w-full max-w-sm h-full"
+                    className="w-full max-w-sm"
                   >
-                    <CarouselContent className="h-full">
+                    <CarouselContent>
                       {images.map((image, i) => (
-                        <CarouselItem key={i} className="h-full">
-                          <div className="relative aspect-[4/3] h-full">
+                        <CarouselItem key={i}>
+                          <div className="relative aspect-[4/3]">
                             <Image
                               src={image.url}
                               alt={`${title} - image ${i + 1}`}
@@ -130,9 +130,9 @@ const StorySection = ({
                     <CarouselNext className="hidden sm:flex" />
                   </Carousel>
                 ) : (
-                  <div className="flex flex-col gap-4 h-full w-full">
+                  <div className="flex flex-col gap-4 w-full">
                     {images.map((image, i) => (
-                        <div key={i} className="relative flex-1 aspect-[4/3] w-full h-full">
+                        <div key={i} className="relative aspect-[4/3] w-full">
                             <Image
                                 src={image.url}
                                 alt={`${title} - image ${i + 1}`}
