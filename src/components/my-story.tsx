@@ -24,6 +24,8 @@ const StorySection = ({
   const ref = useRef<HTMLDivElement>(null);
   const isVisible = useOnScreen(ref, { threshold: 0.2, triggerOnce: true });
 
+  const imageSide = index % 2 === 0 ? 'left' : 'right';
+
   return (
     <div ref={ref} className="relative pl-8">
       {!isLast && (
@@ -47,8 +49,23 @@ const StorySection = ({
             : 'opacity-0 translate-y-4'
         )}
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="p-6 md:p-8">
+        <div className="grid grid-cols-1 md:grid-cols-2">
+            <div className={cn(
+                "flex flex-col justify-center p-6 md:p-8",
+                imageSide === 'right' ? 'md:order-first' : ''
+            )}>
+              <CardHeader>
+                <CardTitle className="text-2xl">{title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="text-base text-muted-foreground leading-relaxed text-justify space-y-4">
+                  {content.split('\n\n').map((paragraph, i) => (
+                    <p key={i}>{paragraph}</p>
+                  ))}
+                </div>
+              </CardContent>
+            </div>
+            <div className="p-6 md:p-8 flex flex-col justify-center">
                 <div className="flex flex-col gap-4">
                 {images.map((image, i) => (
                     <Image
@@ -62,18 +79,6 @@ const StorySection = ({
                     />
                 ))}
                 </div>
-            </div>
-            <div className="flex flex-col justify-center">
-              <CardHeader>
-                <CardTitle className="text-2xl">{title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="text-base text-muted-foreground leading-relaxed text-justify space-y-4">
-                  {content.split('\n\n').map((paragraph, i) => (
-                    <p key={i}>{paragraph}</p>
-                  ))}
-                </div>
-              </CardContent>
             </div>
         </div>
       </Card>
