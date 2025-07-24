@@ -7,7 +7,7 @@ import { siteData } from '@/lib/site-data';
 import { useOnScreen } from '@/hooks/use-on-screen';
 import { cn } from '@/lib/utils';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
-import { User, Book } from 'lucide-react';
+import { User, Book, HardHat } from 'lucide-react';
 
 const StorySection = ({
   title,
@@ -25,7 +25,7 @@ const StorySection = ({
   const ref = useRef<HTMLDivElement>(null);
   const isVisible = useOnScreen(ref, { threshold: 0.2, triggerOnce: true });
 
-  const imageSide = index % 2 === 0 ? 'left' : 'right';
+  const imageSide = index % 2 === 0 ? 'right' : 'left';
 
   return (
     <div ref={ref} className="relative pl-8">
@@ -52,7 +52,7 @@ const StorySection = ({
       >
         <div className="grid grid-cols-1 md:grid-cols-2">
             <div className={cn(
-                "flex flex-col justify-center p-6 md:p-8",
+                "flex flex-col justify-center",
                 imageSide === 'left' ? 'md:order-last' : ''
             )}>
               <CardHeader>
@@ -65,6 +65,11 @@ const StorySection = ({
                   {title === "Ensino Fundamental e Médio" && (
                     <div className="bg-primary/20 p-3 rounded-full">
                       <Book className="h-8 w-8 text-primary" />
+                    </div>
+                  )}
+                  {title === "Graduação" && (
+                    <div className="bg-primary/20 p-3 rounded-full">
+                      <HardHat className="h-8 w-8 text-primary" />
                     </div>
                   )}
                   <span>{title}</span>
