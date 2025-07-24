@@ -32,7 +32,7 @@ export const siteData = {
     sections: [
       {
         title: "Quem Sou Eu",
-        content: "I'm a passionate student with a deep interest in Science and Technology Studies. My academic journey has been driven by a curiosity to understand how society and technology shape one another. Being accepted into the Master's program at Goethe Universität is the culmination of years of hard work and dedication.",
+        content: "Me chamo Suzana Alencar, tenho 23 anos e sou graduada em Engenharia Civil. Desde a infância, fui incentivada a pesquisar, ler e escrever, o que despertou em mim uma paixão por compreender como as cidades funcionam, são construídas e podem se tornar mais acessíveis e sustentáveis. Também fui profundamente influenciada pelas escolas que frequentei, onde o incentivo ao voluntariado me ensinou o valor de ajudar o outro e atuar de forma ética e comprometida com o bem coletivo.\n\nAo longo da minha formação, desenvolvi um interesse crescente pela interligação entre ciência, tecnologia e sociedade, buscando entender como esses campos moldam a vida cotidiana. Acredito no poder do conhecimento para transformar realidades e sou movida pelo desejo de contribuir com soluções que promovam justiça social, inovação e sustentabilidade. Aprender com diferentes culturas, desafios e histórias é o que me inspira a continuar estudando e atuando em contextos globais.",
         image: "https://placehold.co/600x400",
         imageHint: "student portrait",
       },
