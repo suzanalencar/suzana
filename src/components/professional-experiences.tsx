@@ -14,6 +14,7 @@ import {
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import { useOnScreen } from '@/hooks/use-on-screen';
+import { Briefcase } from 'lucide-react';
 
 export function ProfessionalExperiences() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -40,12 +41,10 @@ export function ProfessionalExperiences() {
     <section id="professional-experiences" className="bg-secondary/50" ref={containerRef}>
       <div className="container">
         <div className="mx-auto max-w-4xl text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl flex items-center justify-center gap-2">
+            <Briefcase className="h-8 w-8" />
             {siteData.professionalExperiences.title}
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
-            {siteData.professionalExperiences.subtitle}
-          </p>
         </div>
         <div className="flex justify-center">
             <Carousel

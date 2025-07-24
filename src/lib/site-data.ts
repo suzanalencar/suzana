@@ -57,7 +57,7 @@ export const siteData = {
   },
   professionalExperiences: {
     title: "Experiências Profissionais",
-    subtitle: "A brief look into my past roles and projects.",
+    subtitle: "",
     experiences: [
       {
         title: "EJEM",
