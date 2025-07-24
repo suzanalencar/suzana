@@ -1,13 +1,22 @@
 
 'use client';
 
-import { useRef } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import Image from 'next/image';
 import { siteData } from '@/lib/site-data';
 import { useOnScreen } from '@/hooks/use-on-screen';
 import { cn } from '@/lib/utils';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { User, Book, HardHat } from 'lucide-react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi,
+} from '@/components/ui/carousel';
+import Autoplay from 'embla-carousel-autoplay';
 
 const StorySection = ({
   title,
@@ -24,6 +33,19 @@ const StorySection = ({
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const isVisible = useOnScreen(ref, { threshold: 0.2, triggerOnce: true });
+  const [api, setApi] = useState<CarouselApi>();
+
+  const plugin = useRef(
+    Autoplay({ delay: 3000, stopOnInteraction: true, stopOnMouseEnter: true })
+  );
+
+  useEffect(() => {
+    if (!api || !isVisible) {
+      return;
+    }
+    plugin.current.play();
+    return () => plugin.current.stop();
+  }, [api, isVisible]);
 
   const imageSide = index % 2 === 0 ? 'right' : 'left';
 
@@ -83,20 +105,47 @@ const StorySection = ({
                 </div>
               </CardContent>
             </div>
-            <div className={cn("p-6 md:p-8 flex flex-col justify-center", imageSide === 'right' ? 'md:order-last' : '')}>
-                <div className="flex flex-col gap-4 h-full">
-                {images.map((image, i) => (
-                    <div key={i} className="relative flex-1 aspect-[4/3]">
-                        <Image
-                            src={image.url}
-                            alt={`${title} - image ${i + 1}`}
-                            fill
-                            className="rounded-lg object-cover w-full h-auto shadow-[8px_8px_0px_hsl(var(--primary))]"
-                            data-ai-hint={image.hint}
-                        />
-                    </div>
-                ))}
-                </div>
+            <div className={cn("p-6 md:p-8 flex flex-col justify-center items-center", imageSide === 'right' ? 'md:order-last' : '')}>
+                {title === "Ensino Fundamental e Médio" ? (
+                  <Carousel
+                    setApi={setApi}
+                    plugins={[plugin.current]}
+                    opts={{ align: 'start', loop: true }}
+                    className="w-full max-w-sm"
+                  >
+                    <CarouselContent>
+                      {images.map((image, i) => (
+                        <CarouselItem key={i}>
+                          <div className="relative aspect-[4/3]">
+                            <Image
+                              src={image.url}
+                              alt={`${title} - image ${i + 1}`}
+                              fill
+                              className="rounded-lg object-cover w-full h-auto shadow-[8px_8px_0px_hsl(var(--primary))]"
+                              data-ai-hint={image.hint}
+                            />
+                          </div>
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <CarouselPrevious className="hidden sm:flex" />
+                    <CarouselNext className="hidden sm:flex" />
+                  </Carousel>
+                ) : (
+                  <div className="flex flex-col gap-4 h-full w-full">
+                    {images.map((image, i) => (
+                        <div key={i} className="relative flex-1 aspect-[4/3]">
+                            <Image
+                                src={image.url}
+                                alt={`${title} - image ${i + 1}`}
+                                fill
+                                className="rounded-lg object-cover w-full h-auto shadow-[8px_8px_0px_hsl(var(--primary))]"
+                                data-ai-hint={image.hint}
+                            />
+                        </div>
+                    ))}
+                  </div>
+                )}
             </div>
         </div>
       </Card>
