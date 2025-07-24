@@ -107,6 +107,7 @@ export const siteData = {
   navLinks: [
     { name: "Apoie-me", href: "#support" },
     { name: "My Story", href: "#my-story" },
+    { name: "Custos", href: "#custos" },
   ],
   socialLinks: [
     { name: 'Email', href: 'alencars.suzana@gmail.com', icon: Mail },
