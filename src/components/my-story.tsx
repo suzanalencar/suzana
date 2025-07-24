@@ -43,7 +43,6 @@ const StorySection = ({
     if (!api || !isVisible) {
       return;
     }
-    // Autoplay is handled by the plugin, but we could add more logic here if needed
   }, [api, isVisible]);
 
   const imageSide = index % 2 === 0 ? 'right' : 'left';
@@ -65,13 +64,13 @@ const StorySection = ({
       </div>
       <Card
         className={cn(
-          'mt-4 transition-all duration-700 ease-out',
+          'mt-4 transition-all duration-700 ease-out flex',
           isVisible
             ? 'opacity-100 translate-y-0'
             : 'opacity-0 translate-y-4'
         )}
       >
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 w-full">
             <div className={cn(
                 "flex flex-col justify-center",
                 imageSide === 'left' ? 'md:order-last' : ''
@@ -104,23 +103,23 @@ const StorySection = ({
                 </div>
               </CardContent>
             </div>
-            <div className={cn("p-6 md:p-8 flex flex-col justify-center items-center", imageSide === 'right' ? 'md:order-last' : '')}>
+            <div className={cn("p-6 md:p-8 flex flex-col justify-center items-center h-full", imageSide === 'right' ? 'md:order-last' : '')}>
                 {images.length > 1 ? (
                   <Carousel
                     setApi={setApi}
                     plugins={[plugin.current]}
                     opts={{ align: 'start', loop: true }}
-                    className="w-full max-w-sm"
+                    className="w-full max-w-sm h-full"
                   >
-                    <CarouselContent>
+                    <CarouselContent className="h-full">
                       {images.map((image, i) => (
-                        <CarouselItem key={i}>
-                          <div className="relative aspect-[4/3]">
+                        <CarouselItem key={i} className="h-full">
+                          <div className="relative aspect-[4/3] h-full">
                             <Image
                               src={image.url}
                               alt={`${title} - image ${i + 1}`}
                               fill
-                              className="rounded-lg object-cover w-full h-auto shadow-[8px_8px_0px_hsl(var(--primary))]"
+                              className="rounded-lg object-cover w-full h-full shadow-[8px_8px_0px_hsl(var(--primary))]"
                               data-ai-hint={image.hint}
                             />
                           </div>
@@ -133,12 +132,12 @@ const StorySection = ({
                 ) : (
                   <div className="flex flex-col gap-4 h-full w-full">
                     {images.map((image, i) => (
-                        <div key={i} className="relative flex-1 aspect-[4/3]">
+                        <div key={i} className="relative flex-1 aspect-[4/3] w-full h-full">
                             <Image
                                 src={image.url}
                                 alt={`${title} - image ${i + 1}`}
                                 fill
-                                className="rounded-lg object-cover w-full h-auto shadow-[8px_8px_0px_hsl(var(--primary))]"
+                                className="rounded-lg object-cover w-full h-full shadow-[8px_8px_0px_hsl(var(--primary))]"
                                 data-ai-hint={image.hint}
                             />
                         </div>
