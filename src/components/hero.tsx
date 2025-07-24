@@ -9,11 +9,11 @@ export function Hero() {
   return (
     <section className="relative w-full h-screen">
       <Image
-        src="/hero-image.jpeg"
-        alt="Frankfurt skyline"
+        src="/Capa.jpg"
+        alt="Suzana Alencar"
         fill
         className="object-cover"
-        data-ai-hint="woman holding letter city skyline"
+        data-ai-hint="woman smiling"
         priority
       />
       <div className="absolute inset-0 bg-black/40" />
