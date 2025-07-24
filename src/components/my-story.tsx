@@ -24,7 +24,7 @@ const StorySection = ({
   const ref = useRef<HTMLDivElement>(null);
   const isVisible = useOnScreen(ref, { threshold: 0.2, triggerOnce: true });
 
-  const imageSide = index % 2 === 0 ? 'left' : 'right';
+  const imageSide = index % 2 === 0 ? 'right' : 'left';
 
   return (
     <div ref={ref} className="relative pl-8">
@@ -55,7 +55,7 @@ const StorySection = ({
                 imageSide === 'right' ? 'md:order-last' : ''
             )}>
               <CardHeader>
-                <CardTitle className="text-2xl">{title}</CardTitle>
+                <CardTitle className="text-2xl text-primary">{title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="text-base text-muted-foreground leading-relaxed text-justify space-y-4">
