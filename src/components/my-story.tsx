@@ -71,6 +71,51 @@ const StorySection = ({
         )}
       >
         <div className="grid grid-cols-1 md:grid-cols-2 w-full">
+            <div className={cn(
+                "p-6 md:p-8 flex items-center justify-center", 
+                imageSide === 'right' ? 'md:order-last' : ''
+            )}>
+                {images.length > 1 ? (
+                    <Carousel
+                        setApi={setApi}
+                        plugins={[plugin.current]}
+                        opts={{ align: 'start', loop: true }}
+                        className="w-full"
+                    >
+                        <CarouselContent>
+                        {images.map((image, i) => (
+                            <CarouselItem key={i}>
+                            <div className="relative aspect-[4/3] h-full">
+                                <Image
+                                src={image.url}
+                                alt={`${title} - image ${i + 1}`}
+                                fill
+                                className="rounded-lg object-cover w-full h-full shadow-[8px_8px_0px_hsl(var(--primary))]"
+                                data-ai-hint={image.hint}
+                                />
+                            </div>
+                            </CarouselItem>
+                        ))}
+                        </CarouselContent>
+                        <CarouselPrevious className="hidden sm:flex" />
+                        <CarouselNext className="hidden sm:flex" />
+                    </Carousel>
+                ) : (
+                  <div className="flex flex-col gap-4 w-full items-center">
+                    {images.map((image, i) => (
+                        <div key={i} className={cn("relative aspect-[4/3] w-full bg-primary/20 rounded-lg p-2 max-w-sm")}>
+                            <Image
+                                src={image.url}
+                                alt={`${title} - image ${i + 1}`}
+                                fill
+                                className="rounded-lg object-cover w-full h-full shadow-[8px_8px_0px_hsl(var(--primary))]"
+                                data-ai-hint={image.hint}
+                            />
+                        </div>
+                    ))}
+                  </div>
+                )}
+            </div>
             <div className={cn( 
                 "flex flex-col justify-center",
                 imageSide === 'left' ? 'md:order-last' : ''
@@ -102,50 +147,6 @@ const StorySection = ({
                   ))}
                 </div>
               </CardContent>
-            </div>
-            <div className={cn("p-6 md:p-8 flex items-center justify-center", 
-                imageSide === 'right' ? 'md:order-last' : ''
-            )}>
-                {images.length > 1 ? (
-                    <Carousel
-                        setApi={setApi}
-                        plugins={[plugin.current]}
-                        opts={{ align: 'start', loop: true }}
-                        className="w-full"
-                    >
-                        <CarouselContent>
-                        {images.map((image, i) => (
-                            <CarouselItem key={i}>
-                            <div className="relative aspect-[4/3] h-full">
-                                <Image
-                                src={image.url}
-                                alt={`${title} - image ${i + 1}`}
-                                fill
-                                className="rounded-lg object-cover w-full h-full shadow-[8px_8px_0px_hsl(var(--primary))]"
-                                data-ai-hint={image.hint}
-                                />
-                            </div>
-                            </CarouselItem>
-                        ))}
-                        </CarouselContent>
-                        <CarouselPrevious className="hidden sm:flex" />
-                        <CarouselNext className="hidden sm:flex" />
-                    </Carousel>
-                ) : (
-                  <div className="flex flex-col gap-4 w-full">
-                    {images.map((image, i) => (
-                        <div key={i} className="relative aspect-[4/3] w-full bg-primary/20 rounded-lg p-2">
-                            <Image
-                                src={image.url}
-                                alt={`${title} - image ${i + 1}`}
-                                fill
-                                className="rounded-lg object-cover w-full h-full shadow-[8px_8px_0px_hsl(var(--primary))]"
-                                data-ai-hint={image.hint}
-                            />
-                        </div>
-                    ))}
-                  </div>
-                )}
             </div>
         </div>
       </Card>
