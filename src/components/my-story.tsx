@@ -103,7 +103,7 @@ const StorySection = ({
                 </div>
               </CardContent>
             </div>
-            <div className={cn("p-6 md:p-8 flex items-stretch", 
+            <div className={cn("p-6 md:p-8 flex items-center justify-center", 
                 imageSide === 'right' ? 'md:order-last' : ''
             )}>
                 {images.length > 1 ? (
