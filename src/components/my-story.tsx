@@ -65,9 +65,11 @@ const StorySection = ({
                 <CardTitle className="text-2xl">{title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-base text-muted-foreground leading-relaxed text-justify">
-                  {content}
-                </p>
+                <div className="text-base text-muted-foreground leading-relaxed text-justify space-y-4">
+                  {content.split('\n\n').map((paragraph, i) => (
+                    <p key={i}>{paragraph}</p>
+                  ))}
+                </div>
               </CardContent>
             </div>
         </div>
