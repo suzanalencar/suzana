@@ -31,12 +31,12 @@ export function FundraisingGoals() {
         </div>
         <div className="mt-10 mx-auto max-w-lg">
              <Image
-                src="/custos.png"
-                alt="Fundraising visual"
+                src="/comprovacaorendaalemanha.jpg"
+                alt="Comprovação de Renda para Visto de Estudante na Alemanha"
                 width={800}
                 height={200}
                 className="rounded-lg shadow-lg w-full h-auto"
-                data-ai-hint="financial requirement"
+                data-ai-hint="financial requirement document"
               />
         </div>
         <div className="mt-10 max-w-3xl mx-auto">
