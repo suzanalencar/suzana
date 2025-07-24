@@ -48,7 +48,7 @@ export function AcceptanceLetter() {
             </Card>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Letter of Acceptance</h2>
           <p className="mt-4 text-lg text-primary-foreground/80">
-            For transparency, you can view my official acceptance letter from Goethe Universität.
+            Para transparência, aqui está minha carta de aceite:
           </p>
         </div>
         <div className="mx-auto max-w-3xl">
