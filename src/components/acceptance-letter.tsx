@@ -27,14 +27,22 @@ export function AcceptanceLetter() {
                 </div>
                 <div className="md:col-span-2">
                   <CardHeader>
-                    <CardTitle>
+                    <CardTitle className="text-2xl">
                       Goethe Universität Frankfurt
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
-                    </p>
+                    <div className="text-muted-foreground text-justify space-y-4">
+                      <p>
+                        A Alemanha é um dos países que mais investem em ciência, tecnologia e educação pública de qualidade e, para quem sonha em aprofundar os estudos com senso crítico e impacto social, ela oferece caminhos únicos. É exatamente nesse cenário que está a Goethe Universität Frankfurt, uma das universidades mais renomadas da Europa, localizada em uma cidade pulsante, diversa e que respira pensamento. Foi lá que nasceram ideias que mudaram a forma como o mundo entende política, cultura e sociedade — como a famosa Escola de Frankfurt, com nomes como Adorno e Habermas.
+                      </p>
+                      <p>
+                        O curso que vou fazer, chamado Science and Technology Studies: Economies, Governance, Life, parte de uma pergunta essencial: como a ciência e a tecnologia moldam - e são moldadas - pela sociedade? O o mestrado propõe olhar com mais profundidade para os interesses, escolhas e impactos por trás das decisões técnicas. A partir do pensamento interdisciplinar, os alunos desenvolvem ferramentas para compreender como o mundo funciona e como ele poderia funcionar melhor.
+                      </p>
+                      <p>
+                        Como venho da engenharia, esse curso representa a chance de conectar o lado técnico com o humano, o político e o ambiental. Ele permite repensar ideias como “eficiência” e “progresso” a partir de realidades concretas: cidades, infraestruturas, desigualdades. Diante da crise climática e das urgências urbanas, acredito que não basta apenas criar soluções: é preciso entender para quem, com que consequências e a partir de que perspectivas estamos criando. E é exatamente isso que esse mestrado me oferece: um espaço de pensamento, prática e transformação.
+                      </p>
+                    </div>
                   </CardContent>
                 </div>
               </div>
