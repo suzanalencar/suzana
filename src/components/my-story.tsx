@@ -52,7 +52,7 @@ const StorySection = ({
         <div className="grid grid-cols-1 md:grid-cols-2">
             <div className={cn(
                 "flex flex-col justify-center p-6 md:p-8",
-                imageSide === 'right' ? 'md:order-first' : ''
+                imageSide === 'right' ? 'md:order-last' : ''
             )}>
               <CardHeader>
                 <CardTitle className="text-2xl">{title}</CardTitle>
@@ -66,17 +66,17 @@ const StorySection = ({
               </CardContent>
             </div>
             <div className="p-6 md:p-8 flex flex-col justify-center">
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 h-full">
                 {images.map((image, i) => (
-                    <Image
-                        key={i}
-                        src={image.url}
-                        alt={`${title} - image ${i + 1}`}
-                        width={600}
-                        height={400}
-                        className="rounded-lg aspect-[3/2] object-cover w-full h-auto shadow-[8px_8px_0px_hsl(var(--primary))]"
-                        data-ai-hint={image.hint}
-                    />
+                    <div key={i} className="relative flex-1">
+                        <Image
+                            src={image.url}
+                            alt={`${title} - image ${i + 1}`}
+                            fill
+                            className="rounded-lg object-cover w-full h-auto shadow-[8px_8px_0px_hsl(var(--primary))]"
+                            data-ai-hint={image.hint}
+                        />
+                    </div>
                 ))}
                 </div>
             </div>
