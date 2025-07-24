@@ -29,22 +29,22 @@ export function FundraisingGoals() {
                     <TableHeader>
                         <TableRow>
                             <TableHead>Item</TableHead>
-                            <TableHead className="text-right">Reais</TableHead>
                             <TableHead className="text-right">Euros</TableHead>
+                            <TableHead className="text-right">Reais</TableHead>
                         </TableRow>
                     </TableHeader>
                     <TableBody>
                         {budget.map((item, index) => (
                             <TableRow key={index}>
                                 <TableCell className="font-medium">{item.item}</TableCell>
-                                <TableCell className="text-right">{formatCurrency(item.cost, 'BRL')}</TableCell>
                                 <TableCell className="text-right">{formatCurrency(item.costEUR, 'EUR')}</TableCell>
+                                <TableCell className="text-right">{formatCurrency(item.cost, 'BRL')}</TableCell>
                             </TableRow>
                         ))}
                         <TableRow className="bg-muted/50 font-bold">
                             <TableCell>Total Goal</TableCell>
-                            <TableCell className="text-right">{formatCurrency(goal, 'BRL')}</TableCell>
                             <TableCell className="text-right">{formatCurrency(goalEUR, 'EUR')}</TableCell>
+                            <TableCell className="text-right">{formatCurrency(goal, 'BRL')}</TableCell>
                         </TableRow>
                     </TableBody>
                 </Table>
