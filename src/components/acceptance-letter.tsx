@@ -14,38 +14,36 @@ export function AcceptanceLetter() {
               Jornada Internacional
             </h3>
             <Card className="text-left shadow-lg mb-8 text-foreground">
-              <div className="grid grid-cols-1 md:grid-cols-3">
-                <div className="md:col-span-1 flex items-center justify-center p-6 bg-primary/20">
-                  <Image
-                    src="/Goethe.jpg"
-                    alt="Goethe Universität Frankfurt"
-                    width={300}
-                    height={300}
-                    className="rounded-lg object-cover shadow-lg"
-                    data-ai-hint="frankfurt campus"
-                  />
-                </div>
-                <div className="md:col-span-2">
-                  <CardHeader>
-                    <CardTitle className="text-2xl">
-                      Goethe Universität Frankfurt
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="text-muted-foreground text-justify space-y-4">
-                      <p>
-                        A Alemanha é um dos países que mais investem em ciência, tecnologia e educação pública de qualidade e, para quem sonha em aprofundar os estudos com senso crítico e impacto social, ela oferece caminhos únicos. É exatamente nesse cenário que está a Goethe Universität Frankfurt, uma das universidades mais renomadas da Europa, localizada em uma cidade pulsante, diversa e que respira pensamento. Foi lá que nasceram ideias que mudaram a forma como o mundo entende política, cultura e sociedade — como a famosa Escola de Frankfurt, com nomes como Adorno e Habermas.
-                      </p>
-                      <p>
-                        O curso que vou fazer, chamado Science and Technology Studies: Economies, Governance, Life, parte de uma pergunta essencial: como a ciência e a tecnologia moldam - e são moldadas - pela sociedade? O o mestrado propõe olhar com mais profundidade para os interesses, escolhas e impactos por trás das decisões técnicas. A partir do pensamento interdisciplinar, os alunos desenvolvem ferramentas para compreender como o mundo funciona e como ele poderia funcionar melhor.
-                      </p>
-                      <p>
-                        Como venho da engenharia, esse curso representa a chance de conectar o lado técnico com o humano, o político e o ambiental. Ele permite repensar ideias como “eficiência” e “progresso” a partir de realidades concretas: cidades, infraestruturas, desigualdades. Diante da crise climática e das urgências urbanas, acredito que não basta apenas criar soluções: é preciso entender para quem, com que consequências e a partir de que perspectivas estamos criando. E é exatamente isso que esse mestrado me oferece: um espaço de pensamento, prática e transformação.
-                      </p>
+                <CardHeader>
+                <CardTitle className="text-2xl">
+                    Goethe Universität Frankfurt
+                </CardTitle>
+                </CardHeader>
+                <CardContent>
+                <div className="text-muted-foreground text-justify space-y-4">
+                    <p>
+                    A Alemanha é um dos países que mais investem em ciência, tecnologia e educação pública de qualidade e, para quem sonha em aprofundar os estudos com senso crítico e impacto social, ela oferece caminhos únicos. É exatamente nesse cenário que está a Goethe Universität Frankfurt, uma das universidades mais renomadas da Europa, localizada em uma cidade pulsante, diversa e que respira pensamento. Foi lá que nasceram ideias que mudaram a forma como o mundo entende política, cultura e sociedade — como a famosa Escola de Frankfurt, com nomes como Adorno e Habermas.
+                    </p>
+                    
+                    <div className="flex items-center justify-center p-6 bg-primary/20 rounded-lg">
+                        <Image
+                        src="/Goethe.jpg"
+                        alt="Goethe Universität Frankfurt"
+                        width={400}
+                        height={400}
+                        className="rounded-lg object-cover shadow-lg max-w-full h-auto"
+                        data-ai-hint="frankfurt campus"
+                        />
                     </div>
-                  </CardContent>
+
+                    <p>
+                    O curso que vou fazer, chamado Science and Technology Studies: Economies, Governance, Life, parte de uma pergunta essencial: como a ciência e a tecnologia moldam - e são moldadas - pela sociedade? O o mestrado propõe olhar com mais profundidade para os interesses, escolhas e impactos por trás das decisões técnicas. A partir do pensamento interdisciplinar, os alunos desenvolvem ferramentas para compreender como o mundo funciona e como ele poderia funcionar melhor.
+                    </p>
+                    <p>
+                    Como venho da engenharia, esse curso representa a chance de conectar o lado técnico com o humano, o político e o ambiental. Ele permite repensar ideias como “eficiência” e “progresso” a partir de realidades concretas: cidades, infraestruturas, desigualdades. Diante da crise climática e das urgências urbanas, acredito que não basta apenas criar soluções: é preciso entender para quem, com que consequências e a partir de que perspectivas estamos criando. E é exatamente isso que esse mestrado me oferece: um espaço de pensamento, prática e transformação.
+                    </p>
                 </div>
-              </div>
+                </CardContent>
             </Card>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Letter of Acceptance</h2>
           <p className="mt-4 text-lg text-primary-foreground/80">
