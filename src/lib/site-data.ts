@@ -93,11 +93,11 @@ export const siteData = {
     current: 25,
     currency: "BRL",
     budget: [
-      { item: "Seguro saúde", cost: 1200, costEUR: 220 },
-      { item: "Aluguel e depósito (3 meses)", cost: 2100, costEUR: 380 },
-      { item: "Seguro saúde (1 ano)", cost: 800, costEUR: 145 },
-      { item: "Visto e taxas administrativas", cost: 300, costEUR: 55 },
-      { item: "Despesas iniciais (alimentação, transporte)", cost: 600, costEUR: 110 },
+      { item: "Seguro saúde", cost: 11644.50, costEUR: 1731 },
+      { item: "Acomodação e depósito caução", cost: 45915.19, costEUR: 6825},
+      { item: "Alimentação", cost: 20182.50, costEUR: 3000  },
+      { item: "Matrícula (4 semestres)", cost: 10252.71, costEUR: 1524 },
+      { item: "Emergência + despesas iniciais", cost: 10327.52, costEUR: 1535,52 },
     ],
   },
   contact: {

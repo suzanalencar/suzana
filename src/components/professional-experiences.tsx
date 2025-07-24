@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { siteData } from '@/lib/site-data';
@@ -10,6 +10,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi,
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import { useOnScreen } from '@/hooks/use-on-screen';
@@ -17,16 +18,23 @@ import { useOnScreen } from '@/hooks/use-on-screen';
 export function ProfessionalExperiences() {
   const containerRef = useRef<HTMLDivElement>(null);
   const isVisible = useOnScreen(containerRef, { threshold: 0.2, triggerOnce: true });
+  const [api, setApi] = useState<CarouselApi>();
 
   const plugin = useRef(
     Autoplay({ delay: 4000, stopOnInteraction: true, stopOnMouseEnter: true })
   );
 
   useEffect(() => {
-    if (isVisible && plugin.current) {
-      plugin.current.play();
+    if (!api) {
+      return;
     }
-  }, [isVisible]);
+
+    if (isVisible) {
+      plugin.current.play();
+    } else {
+      plugin.current.stop();
+    }
+  }, [isVisible, api]);
 
   return (
     <section id="professional-experiences" className="bg-secondary/50" ref={containerRef}>
@@ -41,6 +49,7 @@ export function ProfessionalExperiences() {
         </div>
         <div className="flex justify-center">
             <Carousel
+                setApi={setApi}
                 plugins={[plugin.current]}
                 opts={{
                     align: 'start',

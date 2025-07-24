@@ -23,7 +23,7 @@ export default function Home() {
         <ProfessionalExperiences />
         <AcceptanceLetter />
         <FundraisingGoals />
-        {/* <Contact /> */}
+        <Contact />
       </main>
       <footer className="bg-muted/50 border-t">
         <div className="container py-12">
