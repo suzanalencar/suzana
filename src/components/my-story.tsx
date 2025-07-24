@@ -134,7 +134,7 @@ const StorySection = ({
                 ) : (
                   <div className="flex flex-col gap-4 w-full">
                     {images.map((image, i) => (
-                        <div key={i} className="relative aspect-[4/3] w-full">
+                        <div key={i} className="relative aspect-[4/3] w-full bg-primary/20 rounded-lg p-2">
                             <Image
                                 src={image.url}
                                 alt={`${title} - image ${i + 1}`}
