@@ -51,7 +51,9 @@ export const siteData = {
         title: "Graduação",
         content: "Comecei a faculdade cheia de planos, mas um mês e meio depois veio a pandemia. Mesmo assim, fiz o possível para me manter ativa. Logo no segundo semestre, entrei para a EJEM, a Empresa Júnior de Engenharia do Mackenzie. Primeiro atuei como projetista, depois como gerente de RH. Aprendi a lidar com prazos, pessoas e projetos de verdade, e essa vivência me ajudou a entender o que realmente me motivava dentro da engenharia.\n\nNo ensino remoto, fui monitora de Física II e de Materiais de Construção. Foi uma forma de me manter próxima da universidade e também de me desafiar a explicar conteúdos técnicos para outras pessoas. Assim que as coisas voltaram ao presencial, comecei meu primeiro estágio. Pude acompanhar obras, aprender na prática e entender melhor o impacto real das decisões técnicas no dia a dia da cidade.\n\nCom o tempo, fui me interessando cada vez mais por pesquisa. Consegui uma bolsa do MackPesquisa para estudar sustentabilidade na área de materiais de construção. E quando chegou a hora do TCC, já sabia que queria falar sobre mobilidade urbana. Escrevi sobre os caminhos possíveis para tornar as cidades mais acessíveis, conectadas e sustentáveis. Foi nesse processo que entendi como engenharia e tecnologia podem (e devem) caminhar junto com o cuidado pelas pessoas e pelo lugar onde vivem.",
         images: [
-            { url: "/grad1.jpg", hint: "graduation ceremony" }
+            { url: "/grad1.jpg", hint: "graduation ceremony" },
+            { url: "https://placehold.co/800x600", hint: "university building" },
+            { url: "https://placehold.co/800x600", hint: "student studying" },
         ],
       }
     ]

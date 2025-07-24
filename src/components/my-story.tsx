@@ -106,7 +106,7 @@ const StorySection = ({
               </CardContent>
             </div>
             <div className={cn("p-6 md:p-8 flex flex-col justify-center items-center", imageSide === 'right' ? 'md:order-last' : '')}>
-                {title === "Ensino Fundamental e Médio" ? (
+                {images.length > 1 ? (
                   <Carousel
                     setApi={setApi}
                     plugins={[plugin.current]}
