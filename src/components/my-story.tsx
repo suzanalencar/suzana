@@ -49,23 +49,23 @@ const StorySection = ({
             : 'opacity-0 translate-y-4'
         )}
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className={cn('p-6 md:p-8', isEven ? 'md:order-last' : '')}>
                 <Image
                     src={image}
                     alt={title}
                     width={600}
                     height={400}
-                    className="rounded-lg aspect-[3/2] object-cover w-full shadow-[8px_8px_0px_hsl(var(--primary))]"
+                    className="rounded-lg aspect-[3/2] object-cover w-full h-full shadow-[8px_8px_0px_hsl(var(--primary))]"
                     data-ai-hint={imageHint}
                 />
             </div>
-            <div>
+            <div className="flex flex-col justify-center">
               <CardHeader>
                 <CardTitle className="text-2xl">{title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-base text-muted-foreground leading-relaxed">
+                <p className="text-base text-muted-foreground leading-relaxed text-justify">
                   {content}
                 </p>
               </CardContent>
