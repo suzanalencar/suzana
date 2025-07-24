@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from './ui/button';
@@ -15,7 +16,7 @@ export function AcceptanceLetter() {
             </h3>
             <Card className="text-left shadow-lg mb-8 text-foreground">
                 <CardHeader>
-                <CardTitle className="text-2xl">
+                <CardTitle className="text-2xl text-center">
                     Goethe Universität Frankfurt
                 </CardTitle>
                 </CardHeader>
