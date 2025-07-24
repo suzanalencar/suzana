@@ -103,21 +103,20 @@ const StorySection = ({
                 </div>
               </CardContent>
             </div>
-            <div className={cn("p-6 md:p-8 flex", 
-                imageSide === 'right' ? 'md:order-last' : '',
-                title === "Ensino Fundamental e Médio" ? 'flex-col gap-4' : 'items-center'
+            <div className={cn("p-6 md:p-8 flex items-stretch", 
+                imageSide === 'right' ? 'md:order-last' : ''
             )}>
                 {images.length > 1 ? (
                     <Carousel
                         setApi={setApi}
                         plugins={[plugin.current]}
                         opts={{ align: 'start', loop: true }}
-                        className="w-full max-w-sm"
+                        className="w-full"
                     >
                         <CarouselContent>
                         {images.map((image, i) => (
                             <CarouselItem key={i}>
-                            <div className="relative aspect-[4/3]">
+                            <div className="relative aspect-[4/3] h-full">
                                 <Image
                                 src={image.url}
                                 alt={`${title} - image ${i + 1}`}
