@@ -1,24 +1,16 @@
+
 'use client';
 
 import { Copy, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
 import { siteData } from '@/lib/site-data';
-import { Progress } from './ui/progress';
-import { useEffect, useState } from 'react';
+import { ProgressCard } from './progress-card';
 
 export function Donation() {
   const { toast } = useToast();
-  const { current, goal } = siteData.fundraising;
-  const [progress, setProgress] = useState(0);
-
-  useEffect(() => {
-    const percentage = (current / goal) * 100;
-    const timer = setTimeout(() => setProgress(percentage), 300);
-    return () => clearTimeout(timer);
-  }, [current, goal]);
-
+  
   const handleCopy = () => {
     navigator.clipboard.writeText(siteData.donation.pixKey);
     toast({
@@ -26,10 +18,6 @@ export function Donation() {
       description: 'Thank you for your support 💚',
     });
   };
-
-  const formatCurrency = (amount: number) => {
-    return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(amount);
-  }
 
   return (
     <section id="support" className="bg-secondary/50">
@@ -59,23 +47,7 @@ export function Donation() {
                 </div>
                 </CardContent>
             </Card>
-
-            <Card className="shadow-lg">
-                <CardHeader>
-                    <CardTitle>Progresso</CardTitle>
-                    <CardDescription>
-                        {formatCurrency(current)} arrecadados de {formatCurrency(goal)}.
-                    </CardDescription>
-                </CardHeader>
-                <CardContent>
-                    <Progress value={progress} className="h-4" />
-                </CardContent>
-                <CardFooter>
-                    <p className="text-sm text-muted-foreground w-full text-center">
-                        Obrigada por cada contribuição!
-                    </p>
-                </CardFooter>
-            </Card>
+            <ProgressCard />
         </div>
       </div>
     </section>

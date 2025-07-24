@@ -1,9 +1,11 @@
+
 'use client';
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { siteData } from '@/lib/site-data';
 import Image from 'next/image';
+import { ProgressCard } from './progress-card';
 
 export function FundraisingGoals() {
   const { goal, goalEUR, budget } = siteData.fundraising;
@@ -69,6 +71,9 @@ export function FundraisingGoals() {
                 </Table>
             </CardContent>
             </Card>
+        </div>
+        <div className="mt-10 mx-auto max-w-xl">
+            <ProgressCard />
         </div>
       </div>
     </section>
