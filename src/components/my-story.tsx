@@ -43,8 +43,7 @@ const StorySection = ({
     if (!api || !isVisible) {
       return;
     }
-    plugin.current.play();
-    return () => plugin.current.stop();
+    // Autoplay is handled by the plugin, but we could add more logic here if needed
   }, [api, isVisible]);
 
   const imageSide = index % 2 === 0 ? 'right' : 'left';
