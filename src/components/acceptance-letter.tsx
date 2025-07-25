@@ -56,7 +56,7 @@ export function AcceptanceLetter() {
             <CardContent className="p-4 md:p-6">
               <div className="aspect-[3/4] w-full bg-muted rounded-md flex items-center justify-center">
                   <Image
-                    src="/GOETHEIMG.jpg"
+                    src="/letter.jpg"
                     alt="Acceptance Letter"
                     width={800}
                     height={1100}
