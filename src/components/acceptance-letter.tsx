@@ -38,7 +38,7 @@ export function AcceptanceLetter() {
                     </div>
 
                     <p>
-                    O curso que vou fazer, chamado Science and Technology Studies: Economies, Governance, Life, parte de uma pergunta essencial: como a ciência e a tecnologia moldam - e são moldadas - pela sociedade? O o mestrado propõe olhar com mais profundidade para os interesses, escolhas e impactos por trás das decisões técnicas. A partir do pensamento interdisciplinar, os alunos desenvolvem ferramentas para compreender como o mundo funciona e como ele poderia funcionar melhor.
+                    O curso que vou fazer, chamado <strong><em>Science and Technology Studies: Economies, Governance, Life</em></strong>, parte de uma pergunta essencial: como a ciência e a tecnologia moldam - e são moldadas - pela sociedade? O o mestrado propõe olhar com mais profundidade para os interesses, escolhas e impactos por trás das decisões técnicas. A partir do pensamento interdisciplinar, os alunos desenvolvem ferramentas para compreender como o mundo funciona e como ele poderia funcionar melhor.
                     </p>
                     <p>
                     Como venho da engenharia, esse curso representa a chance de conectar o lado técnico com o humano, o político e o ambiental. Ele permite repensar ideias como “eficiência” e “progresso” a partir de realidades concretas: cidades, infraestruturas, desigualdades. Diante da crise climática e das urgências urbanas, acredito que não basta apenas criar soluções: é preciso entender para quem, com que consequências e a partir de que perspectivas estamos criando. E é exatamente isso que esse mestrado me oferece: um espaço de pensamento, prática e transformação.
