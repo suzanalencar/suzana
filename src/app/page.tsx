@@ -29,7 +29,7 @@ export default function Home() {
                 <div>
                     <h3 className="font-bold text-lg">{siteData.appName}</h3>
                     <p className="text-muted-foreground text-sm mt-2">
-                      Educação transforma. Apoie meu próximo passo.
+                      Este site é um convite para caminhar comigo rumo ao meu mestrado na Alemanha: um passo importante na construção de um mundo mais consciente, inclusivo e transformador.
                     </p>
                 </div>
                 <div>
