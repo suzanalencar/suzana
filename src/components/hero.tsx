@@ -20,7 +20,7 @@ export function Hero() {
       </div>
       <div className="block md:hidden">
         <Image
-          src="/sitemobile.jpg"
+          src="/Sitemobile.jpg"
           alt="Suzana Alencar"
           fill
           className="object-cover"
