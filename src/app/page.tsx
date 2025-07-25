@@ -1,3 +1,4 @@
+
 import { Header } from '@/components/header';
 import { Hero } from '@/components/hero';
 import { UniversityHighlight } from '@/components/university-highlight';
@@ -33,7 +34,7 @@ export default function Home() {
                     </p>
                 </div>
                 <div>
-                    <h4 className="font-semibold tracking-wider uppercase text-sm mb-3">My Journey</h4>
+                    <h4 className="font-semibold tracking-wider uppercase text-sm mb-3">sobre mim</h4>
                     <nav className="flex flex-col gap-2">
                         {siteData.navLinks.map((link) => (
                             <Link key={link.href} href={link.href} className="text-muted-foreground hover:text-foreground transition-colors text-sm w-fit">
