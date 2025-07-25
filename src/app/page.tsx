@@ -55,7 +55,7 @@ export default function Home() {
             </div>
             <Separator />
             <div className="mt-8 flex flex-col sm:flex-row justify-between items-center text-center sm:text-left text-sm text-muted-foreground gap-4">
-                <p>Built with 💚 in hopes of a new beginning.</p>
+                <p>Com 💚 e determinação por um recomeço cheio de possibilidades.</p>
                 <p>{siteData.appName} &copy; {new Date().getFullYear()}</p>
             </div>
         </div>
