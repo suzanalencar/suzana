@@ -53,7 +53,7 @@ export const siteData = {
         images: [
             { url: "/grad1.jpg", hint: "graduation ceremony" },
             { url: "/facul.JPG", hint: "university building" },
-            { url: "/ejem.jpg", hint: "student studying" },
+            { url: "/ejem.jpg", hint: "student group" }
         ],
       }
     ]
