@@ -44,7 +44,7 @@ export default function Home() {
                     </nav>
                 </div>
                 <div>
-                    <h4 className="font-semibold tracking-wider uppercase text-sm mb-3">Connect With Me</h4>
+                    <h4 className="font-semibold tracking-wider uppercase text-sm mb-3">Contato</h4>
                     <div className="flex items-center gap-4">
                         {siteData.socialLinks.map((social) => (
                             <Link key={social.name} href={social.href} target="_blank" rel="noopener noreferrer" aria-label={social.name}>
