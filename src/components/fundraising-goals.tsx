@@ -22,7 +22,7 @@ export function FundraisingGoals() {
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">{siteData.fundraising.title}</h2>
             <div className="mt-4 text-lg text-muted-foreground space-y-4 text-justify">
                 <p>
-                    Para conseguir o visto de estudante, preciso comprovar que tenho o valor mínimo de 11.904 euros. Esse valor é obrigatório e deve ser depositado em uma conta bloqueada, como garantia de que posso me sustentar durante o primeiro ano do mestrado.
+                    Para conseguir o visto de estudante, preciso comprovar que tenho o valor mínimo de <strong>11.904 euros</strong>. Esse valor é obrigatório e deve ser depositado em uma conta bloqueada, como garantia de que posso me sustentar durante o primeiro ano do mestrado.
                 </p>
                 <p>
                     No entanto, esse dinheiro só pode ser acessado após a liberação do meu visto e minha chegada à Alemanha. Por isso, estou arrecadando doações para cobrir as despesas iniciais da viagem também.
