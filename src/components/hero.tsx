@@ -8,14 +8,26 @@ import { cn } from '@/lib/utils';
 export function Hero() {
   return (
     <section className="relative w-full h-screen">
-      <Image
-        src="/Capa.jpg"
-        alt="Suzana Alencar"
-        fill
-        className="object-cover"
-        data-ai-hint="woman smiling"
-        priority
-      />
+      <div className="hidden md:block">
+        <Image
+          src="/Capa.jpg"
+          alt="Suzana Alencar"
+          fill
+          className="object-cover"
+          data-ai-hint="woman smiling"
+          priority
+        />
+      </div>
+      <div className="block md:hidden">
+        <Image
+          src="/sitemobile.jpg"
+          alt="Suzana Alencar"
+          fill
+          className="object-cover"
+          data-ai-hint="woman smiling mobile"
+          priority
+        />
+      </div>
       <div className="absolute inset-0 bg-black/40" />
       <div className="container relative z-10 flex h-full flex-col items-center justify-center text-center text-white pb-16 pt-20 sm:pt-12">
         <div className="mb-4 flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-1 text-sm text-neutral-200 drop-shadow-sm backdrop-blur-sm">
