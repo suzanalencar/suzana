@@ -64,7 +64,7 @@ export function FundraisingGoals() {
                             </TableRow>
                         ))}
                         <TableRow className="bg-muted/50 font-bold">
-                            <TableCell>Total Goal</TableCell>
+                            <TableCell>Total</TableCell>
                             <TableCell className="text-right">{formatCurrency(goalEUR, 'EUR')}</TableCell>
                             <TableCell className="text-right">{formatCurrency(goal, 'BRL')}</TableCell>
                         </TableRow>
