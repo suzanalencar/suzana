@@ -29,7 +29,7 @@ export default function Home() {
                 <div>
                     <h3 className="font-bold text-lg">{siteData.appName}</h3>
                     <p className="text-muted-foreground text-sm mt-2">
-                        Supporting my academic journey to Germany.
+                      Educação transforma. Apoie meu próximo passo.
                     </p>
                 </div>
                 <div>
