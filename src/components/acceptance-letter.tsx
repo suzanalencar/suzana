@@ -28,7 +28,7 @@ export function AcceptanceLetter() {
                     
                     <div className="flex items-center justify-center p-6 rounded-lg">
                         <Image
-                        src="/Goethe.jpg"
+                        src="/GOETHEIMG.JPG"
                         alt="Goethe Universität Frankfurt"
                         width={400}
                         height={400}
