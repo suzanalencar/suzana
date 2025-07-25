@@ -23,7 +23,7 @@ export function AcceptanceLetter() {
                 <CardContent>
                 <div className="text-muted-foreground text-justify space-y-4">
                     <p>
-                    A Alemanha é um dos países que mais investem em ciência, tecnologia e educação pública de qualidade e, para quem sonha em aprofundar os estudos com senso crítico e impacto social, ela oferece caminhos únicos. É exatamente nesse cenário que está a Goethe Universität Frankfurt, uma das universidades mais renomadas da Europa, localizada em uma cidade pulsante, diversa e que respira pensamento. Foi lá que nasceram ideias que mudaram a forma como o mundo entende política, cultura e sociedade — <strong>como a famosa Escola de Frankfurt, com nomes como Adorno e Habermas.</strong>
+                    A Alemanha é um dos países que mais investem em ciência, tecnologia e educação pública de qualidade e, para quem sonha em aprofundar os estudos com senso crítico e impacto social, ela oferece caminhos únicos. É exatamente nesse cenário que está a Goethe Universität Frankfurt, uma das universidades mais renomadas da Europa, localizada em uma cidade pulsante, diversa e que respira pensamento. Foi lá que nasceram ideias que mudaram a forma como o mundo entende política, cultura e sociedade — como a famosa Escola de Frankfurt, com nomes como <strong>Adorno e Habermas</strong>.
                     </p>
                     
                     <div className="flex items-center justify-center p-6 rounded-lg">
