@@ -43,7 +43,7 @@ export function FundraisingGoals() {
             <Card className="shadow-lg h-full">
             <CardHeader>
                 <CardTitle>Detalhamento de gastos</CardTitle>
-                <CardDescription>Here's how your contribution will be used.</CardDescription>
+                <CardDescription>Valores para 1 ano (requerimento para obter o visto)</CardDescription>
             </CardHeader>
             <CardContent>
                 <Table>
