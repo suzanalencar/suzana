@@ -18,6 +18,24 @@ import {
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 
+const FormattedContent = ({ content }: { content: string }) => {
+  const parts = content.split(/(\*\*.*?\*\*)/g);
+  return (
+    <>
+      {parts.map((part, i) =>
+        part.startsWith('**') && part.endsWith('**') ? (
+          <strong key={i} className="font-bold text-foreground/90">
+            {part.slice(2, -2)}
+          </strong>
+        ) : (
+          part
+        )
+      )}
+    </>
+  );
+};
+
+
 const StorySection = ({
   title,
   content,
@@ -143,7 +161,7 @@ const StorySection = ({
               <CardContent>
                 <div className="text-base text-muted-foreground leading-relaxed text-justify space-y-4">
                   {content.split('\n\n').map((paragraph, i) => (
-                    <p key={i}>{paragraph}</p>
+                    <p key={i}><FormattedContent content={paragraph} /></p>
                   ))}
                 </div>
               </CardContent>
