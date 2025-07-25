@@ -42,7 +42,7 @@ export function FundraisingGoals() {
         <div className="mt-10 max-w-3xl mx-auto">
             <Card className="shadow-lg h-full">
             <CardHeader>
-                <CardTitle>Budget Breakdown</CardTitle>
+                <CardTitle>Detalhamento de gastos</CardTitle>
                 <CardDescription>Here's how your contribution will be used.</CardDescription>
             </CardHeader>
             <CardContent>
