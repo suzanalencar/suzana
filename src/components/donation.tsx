@@ -1,12 +1,13 @@
 
 'use client';
 
-import { Copy, Heart } from 'lucide-react';
+import { Copy, Heart, DollarSign } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
 import { siteData } from '@/lib/site-data';
 import { ProgressCard } from './progress-card';
+import Link from 'next/link';
 
 export function Donation() {
   const { toast } = useToast();
@@ -45,6 +46,22 @@ export function Donation() {
                     copie chave pix
                     </Button>
                 </div>
+                </CardContent>
+            </Card>
+            <Card className="shadow-lg">
+                <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                    <DollarSign className="text-primary" />
+                    <span>Doe com PayPal</span>
+                </CardTitle>
+                <CardDescription>Para doações internacionais, use o PayPal.</CardDescription>
+                </CardHeader>
+                <CardContent>
+                <Button asChild className="w-full">
+                    <Link href={siteData.donation.paypalLink} target="_blank" rel="noopener noreferrer">
+                        Doe com PayPal
+                    </Link>
+                </Button>
                 </CardContent>
             </Card>
             <ProgressCard />

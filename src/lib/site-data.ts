@@ -24,8 +24,9 @@ export const siteData = {
     badge: "Mestrado em Science and Technology Studies",
   },
   donation: {
-    title: "Apoie meus estudos com uma doação em PIX",
+    title: "Apoie meus estudos com uma doação",
     pixKey: "alencars.suzana@gmail.com", // Example PIX key
+    paypalLink: "https://www.paypal.com/donate?business=YOUR_BUSINESS_TOKEN", // TODO: Replace with actual PayPal link
     message: "Toda contribuição me ajuda a estar um passo mais perto desse sonho. Obrigada por fazer parte!",
   },
   story: {
@@ -91,7 +92,7 @@ export const siteData = {
     title: "Custos",
     goal: 98322.41,
     goalEUR: 14615,
-    current: 1849.51,
+    current: 2099.51,
     currency: "BRL",
     budget: [
       { item: "Seguro saúde", cost: 11644.50, costEUR: 1731 },
