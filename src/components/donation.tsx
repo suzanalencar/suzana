@@ -12,10 +12,10 @@ import Link from 'next/link';
 export function Donation() {
   const { toast } = useToast();
   
-  const handleCopy = () => {
-    navigator.clipboard.writeText(siteData.donation.pixKey);
+  const handleCopy = (text: string, type: 'PIX' | 'email') => {
+    navigator.clipboard.writeText(text);
     toast({
-      title: 'PIX key copied!',
+      title: `${type} key copied!`,
       description: 'Thank you for your support 💚',
     });
   };
@@ -41,7 +41,7 @@ export function Donation() {
                     <code className="flex-1 text-center sm:text-left font-mono text-sm text-muted-foreground break-all">
                     {siteData.donation.pixKey}
                     </code>
-                    <Button onClick={handleCopy} className="w-full sm:w-auto shrink-0">
+                    <Button onClick={() => handleCopy(siteData.donation.pixKey, 'PIX')} className="w-full sm:w-auto shrink-0">
                     <Copy className="mr-2 h-4 w-4" />
                     copie chave pix
                     </Button>
@@ -54,14 +54,23 @@ export function Donation() {
                     <DollarSign className="text-primary" />
                     <span>Doe com PayPal</span>
                 </CardTitle>
-                <CardDescription>Para doações internacionais, use o PayPal.</CardDescription>
+                <CardDescription>Para doações internacionais, você pode usar o link do PayPal ou copiar meu e-mail abaixo.</CardDescription>
                 </CardHeader>
-                <CardContent>
-                <Button asChild className="w-full">
-                    <Link href={siteData.donation.paypalLink} target="_blank" rel="noopener noreferrer">
-                        Doe com PayPal
-                    </Link>
-                </Button>
+                <CardContent className="space-y-4">
+                    <Button asChild className="w-full">
+                        <Link href={siteData.donation.paypalLink} target="_blank" rel="noopener noreferrer">
+                            Doe com link PayPal
+                        </Link>
+                    </Button>
+                    <div className="flex flex-col items-center gap-4 sm:flex-row sm:gap-2 rounded-lg border bg-muted p-4">
+                        <code className="flex-1 text-center sm:text-left font-mono text-sm text-muted-foreground break-all">
+                        {siteData.donation.pixKey}
+                        </code>
+                        <Button onClick={() => handleCopy(siteData.donation.pixKey, 'email')} className="w-full sm:w-auto shrink-0">
+                        <Copy className="mr-2 h-4 w-4" />
+                        copie o e-mail
+                        </Button>
+                    </div>
                 </CardContent>
             </Card>
             <ProgressCard />
