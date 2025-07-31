@@ -1,4 +1,3 @@
-
 'use client';
 
 import { Copy, Heart, DollarSign } from 'lucide-react';
@@ -15,7 +14,7 @@ export function Donation() {
   const handleCopy = (text: string, type: 'PIX' | 'email') => {
     navigator.clipboard.writeText(text);
     toast({
-      title: `${type} key copied!`,
+      title: `${type} copied!`,
       description: 'Thank you for your support 💚',
     });
   };
@@ -54,14 +53,9 @@ export function Donation() {
                     <DollarSign className="text-primary" />
                     <span>Doe com PayPal</span>
                 </CardTitle>
-                <CardDescription>Para doações internacionais, você pode usar o link do PayPal ou copiar meu e-mail abaixo.</CardDescription>
+                <CardDescription>Para doações internacionais, você pode copiar meu e-mail abaixo.</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                    <Button asChild className="w-full">
-                        <Link href={siteData.donation.paypalLink} target="_blank" rel="noopener noreferrer">
-                            Doe com link PayPal
-                        </Link>
-                    </Button>
                     <div className="flex flex-col items-center gap-4 sm:flex-row sm:gap-2 rounded-lg border bg-muted p-4">
                         <code className="flex-1 text-center sm:text-left font-mono text-sm text-muted-foreground break-all">
                         {siteData.donation.pixKey}
