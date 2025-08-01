@@ -92,7 +92,7 @@ export const siteData = {
     title: "Custos",
     goal: 98322.41,
     goalEUR: 14615,
-    current: 2099.51,
+    current: 2334.51,
     currency: "BRL",
     budget: [
       { item: "Seguro saúde", cost: 11644.50, costEUR: 1731 },
